@@ -1,4 +1,4 @@
 corporate-Identity
 ==================
 
-Corporate identity stuff
+This is where we keep our corporate identity stuff like logos, mission statements, etc.
