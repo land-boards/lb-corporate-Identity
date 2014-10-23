@@ -1,0 +1,128 @@
+{| class="wikitable"
+!DATE
+!TIME
+!Days
+!SERVICE
+!WHERE
+!NOTES
+|-
+|10/1/2014
+|
+|0
+|Confirmed
+|
+|First Day of National Holiday
+|-
+|10/1/2014
+|
+|0
+|PCB Confirmed
+|This order has PCB item(s)
+|
+|-
+|10/1/2014
+|
+|0
+|PCB Confirmed
+|Payment Status: Completed
+|
+|-
+|10/1/2014
+|
+|0
+|PCB Processing
+|PCB File:D132529_63792_RPI_GVS_CFG.zip is now under processing.
+|
+|-
+|10/4/2014
+|
+|3
+|PCB Processing
+|PCB File:D132529_63792_RPI_GVS_CFG.zip passed file examination.
+|
+|-
+|10/8/2014
+|
+|7
+|In production
+|D132529_63792_RPI_GVS_CFG is coming back from production workshop.
+|End of National Holiday
+|-
+|10/9/2014
+|
+|8
+|Processing
+|
+|
+|-
+|10/9/2014
+|
+|8
+|Shipped
+|Order was shipped
+|
+|-
+|10/10/2014
+|
+|9
+|Traceable
+|Order was Traceable
+|
+|-
+|10/10/2014
+|18:15:00
+|9
+|Shenzhen
+|Order Received
+|
+|-
+|10/10/2014
+|22:46:07
+|9
+|Shenzhen
+|Sent to CUE processing center
+|8 day backlog in the processing center
+|-
+|10/18/2014
+|9:45:00
+|17
+|Shenzhen
+|Arrived at export port
+|
+|-
+|10/19/2014
+|20:45:00
+|18
+|InDelivery
+|Departed
+|
+|-
+|10/20/2014
+|14:44:00
+|19
+|United States
+|Arrived at destination port
+|
+|-
+|10/21/2014
+|14:44:00
+|20
+|United States
+|Waiting for customs clearance on 2014-10-21 14:44
+|
+|-
+|10/23/2014
+|18:54:00
+|22
+|United States
+|Arrived at destination sort facility on 2014-10-23 18:54
+|
+|-
+|10/23/2014
+|18:54:00
+|22
+|United States
+|Waiting for delivery on 2014-10-23 18:54
+|
+|-
+|}
