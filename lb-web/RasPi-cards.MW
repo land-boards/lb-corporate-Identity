@@ -1,0 +1,44 @@
+{| class="wikitable"
+!Documentation
+!Function
+!3.3V GPIO
+!5V GPIO
+!Compatible with
+|-
+|RasPi-GVS
+|GVS card
+|0
+|16
+|All Rasberry Pi Models
+|-
+|RasPi-B-Plus-GVS
+|GVS card 5V
+|9
+|16
+|Rasberry Pi Models A+, B+
+|-
+|RASPI-PLUS-GVS-CFG
+|Configurable GVS hat
+|26
+|0-8
+|Rasberry Pi Models A+, B+
+|-
+|RPI-MDI
+|Servo card
+|3
+|0
+|All Rasberry Pi Models
+|-
+|RPIO-TINY
+|GVS card
+|17
+|0
+|All Rasberry Pi Models
+|-
+|RPIO-TINY-2 
+|GVS card
+|17
+|0-8
+|All Rasberry Pi Models
+|-
+|}

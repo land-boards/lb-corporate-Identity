@@ -9,6 +9,7 @@ The requested URL
 <!--#echo var="REQUEST_URI" -->
 was not found on this server.
 <hr>
+<a ref="http://land-boards.com/blwiki/index.php?title=Main_Page">Try our Wiki Page</a>
 
 <!--#echo var="HTTP_HOST" -->
 
