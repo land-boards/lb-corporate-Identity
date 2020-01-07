@@ -1,4 +1,5 @@
-corporate-Identity
-==================
+== corporate-Identity ==
 
 This is where we keep our corporate identity stuff like logos, mission statements, etc.
+
+[[File:LB-banner-Proof-2.png]]
