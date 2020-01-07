@@ -1,5 +1,5 @@
 == corporate-Identity ==
 
-This is where we keep our corporate identity stuff like logos, mission statements, etc.
-
 <img src="http://land-boards.com/lb-logos/LB-banner-Proof-2.png"></img>
+
+This is where we keep our corporate identity stuff like logos, mission statements, etc.
