@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://www.scullcom.uk/design-build-a-milliohm-meter/ -->
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="en-GB" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Design &amp; Build a Milliohm Meter – Scullcom</title>
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Scullcom » Feed" href="http://www.scullcom.uk/feed/">
+<link rel="alternate" type="application/rss+xml" title="Scullcom » Comments Feed" href="http://www.scullcom.uk/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Scullcom » Design &amp; Build a Milliohm Meter Comments Feed" href="http://www.scullcom.uk/design-build-a-milliohm-meter/feed/">
+<script src="./Design &amp; Build a Milliohm Meter – Scullcom_files/cb=gapi.loaded_2" async=""></script><script src="./Design &amp; Build a Milliohm Meter – Scullcom_files/cb=gapi.loaded_1" async=""></script><script src="./Design &amp; Build a Milliohm Meter – Scullcom_files/cb=gapi(2).loaded_0" async=""></script><script type="text/javascript" async="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/recaptcha__en.js.download"></script><script type="text/javascript" async="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/plusone.js.download" gapi_processed="true"></script><script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.scullcom.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.3"}};
+!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+</script><script src="./Design &amp; Build a Milliohm Meter – Scullcom_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+display: inline !important;
+border: none !important;
+box-shadow: none !important;
+height: 1em !important;
+width: 1em !important;
+margin: 0 .07em !important;
+vertical-align: -0.1em !important;
+background: none !important;
+padding: 0 !important;
+}
+</style>
+<!-- <link rel='stylesheet' id='apss-font-awesome-css'  href='http://www.scullcom.uk/wp-content/plugins/accesspress-social-share/css/font-awesome/font-awesome.min.css?ver=4.3.5' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Design &amp; Build a Milliohm Meter – Scullcom_files/1515861099index.css" media="all">
+<link rel="stylesheet" id="apss-font-opensans-css" href="./Design &amp; Build a Milliohm Meter – Scullcom_files/css" type="text/css" media="all">
+<!-- <link rel='stylesheet' id='apss-frontend-css-css'  href='http://www.scullcom.uk/wp-content/plugins/accesspress-social-share/css/frontend.css?ver=4.3.5' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='ye_dynamic-css'  href='http://www.scullcom.uk/wp-content/plugins/youtube-embed/css/main.min.css?ver=4.9.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-bootstrap-css'  href='http://www.scullcom.uk/wp-content/themes/sparkling/assets/css/bootstrap.min.css?ver=4.9.3' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='sparkling-icons-css'  href='http://www.scullcom.uk/wp-content/themes/sparkling/assets/css/font-awesome.min.css?ver=4.9.3' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Design &amp; Build a Milliohm Meter – Scullcom_files/1515861099index(1).css" media="all">
+<link rel="stylesheet" id="sparkling-fonts-css" href="./Design &amp; Build a Milliohm Meter – Scullcom_files/css(1)" type="text/css" media="all">
+<!-- <link rel='stylesheet' id='sparkling-style-css'  href='http://www.scullcom.uk/wp-content/themes/sparkling/style.css?ver=4.9.3' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="./Design &amp; Build a Milliohm Meter – Scullcom_files/1515861098index.css" media="all">
+<script src="./Design &amp; Build a Milliohm Meter – Scullcom_files/1518483267index.js.download" type="text/javascript"></script>
+<!-- <script type='text/javascript' src='http://www.scullcom.uk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script> -->
+<!-- <script type='text/javascript' src='http://www.scullcom.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script> -->
+<!-- <script type='text/javascript' src='http://www.scullcom.uk/wp-content/themes/sparkling/assets/js/vendor/modernizr.min.js?ver=4.9.3'></script> -->
+<!-- <script type='text/javascript' src='http://www.scullcom.uk/wp-content/themes/sparkling/assets/js/vendor/bootstrap.min.js?ver=4.9.3'></script> -->
+<!-- <script type='text/javascript' src='http://www.scullcom.uk/wp-content/themes/sparkling/assets/js/functions.min.js?ver=4.9.3'></script> -->
+<link rel="https://api.w.org/" href="http://www.scullcom.uk/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.scullcom.uk/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.scullcom.uk/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="DROK DC to DC Converter Upgrade" href="http://www.scullcom.uk/drok-dc-to-dc-converter-upgrade/">
+<link rel="next" title="Design &amp; Build 6½ Digit Millivolt Meter – Part 1" href="http://www.scullcom.uk/design-build-6%c2%bd-digit-millivolt-meter-part-1/">
+<meta name="generator" content="WordPress 4.9.3">
+<link rel="canonical" href="http://www.scullcom.uk/design-build-a-milliohm-meter/">
+<link rel="shortlink" href="http://www.scullcom.uk/?p=53">
+<link rel="alternate" type="application/json+oembed" href="http://www.scullcom.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.scullcom.uk%2Fdesign-build-a-milliohm-meter%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://www.scullcom.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.scullcom.uk%2Fdesign-build-a-milliohm-meter%2F&amp;format=xml">
+<link rel="apple-touch-icon" sizes="57x57" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/favicon-194x194.png" sizes="194x194">
+<link rel="icon" type="image/png" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/manifest.json">
+<link rel="mask-icon" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="http://www.scullcom.uk/wp-content/uploads/fbrfg/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/fbrfg/mstile-144x144.png">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><style type="text/css"></style><link rel="pingback" href="http://www.scullcom.uk/xmlrpc.php">		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style> .gc-bubbleDefault{background-color:transparent !important;text-align:left;padding:0 !important;margin:0 !important;border:0 !important;table-layout:auto !important}.gc-reset{background-color:transparent !important;border:0 !important;padding:0 !important;margin:0 !important;text-align:left}.pls-bubbleTop{border-bottom:1px solid #ccc !important}.pls-topTail,.pls-vertShimLeft,.pls-contentLeft{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/border_3.gif) !important}.pls-topTail{background-repeat:repeat-x !important;background-position:bottom !important}.pls-vertShim{background-color:#fff !important;text-align:right}.tbl-grey .pls-vertShim{background-color:#f5f5f5 !important}.pls-vertShimLeft{background-repeat:repeat-y !important;background-position:right !important;height:4px}.pls-vertShimRight{height:4px}.pls-confirm-container .pls-vertShim{background-color:#fff3c2 !important}.pls-contentWrap{background-color:#fff !important;position:relative !important;vertical-align:top}.pls-contentLeft{background-repeat:repeat-y;background-position:right;vertical-align:top}.pls-dropRight{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropR_3.png) !important;background-repeat:repeat-y !important;vertical-align:top}.pls-vert,.pls-tailleft,.pls-dropTR .pls-dropBR,.pls-dropBL,.pls-vert img{vertical-align:top}.pls-dropBottom{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleDropB_3.png) !important;background-repeat:repeat-x !important;width:100%;vertical-align:top}.pls-topLeft{background:inherit !important;text-align:right;vertical-align:bottom}.pls-topRight{background:inherit !important;text-align:left;vertical-align:bottom}.pls-bottomLeft{background:inherit !important;text-align:right}.pls-bottomRight{background:inherit !important;text-align:left;vertical-align:top}.pls-tailtop,.pls-tailright,.pls-tailbottom,.pls-tailleft{display:none;position:relative}.pls-tailbottom,.pls-tailtop,.pls-tailright,.pls-tailleft,.pls-dropTR,.pls-dropBR,.pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite_3.png) !important;background-repeat:no-repeat}.tbl-grey .pls-tailbottom,.tbl-grey .pls-tailtop,.tbl-grey .pls-tailright,.tbl-grey .pls-tailleft,.tbl-grey .pls-dropTR,.tbl-grey .pls-dropBR,.tbl-grey .pls-dropBL{background-image:url(//ssl.gstatic.com/s2/oz/images/stars/po/bubblev1/bubbleSprite-grey.png) !important}.pls-tailbottom{background-position:-23px 0}.pls-confirm-container .pls-tailbottom{background-position:-23px -10px}.pls-tailtop{background-position:-19px -20px}.pls-tailright{background-position:0 0}.pls-tailleft{background-position:-10px 0}.pls-tailtop{vertical-align:top}.gc-bubbleDefault td{line-height:0;font-size:0}.pls-topLeft img,.pls-topRight img,.pls-tailbottom{vertical-align:bottom}.pls-bottomLeft img,.bubbleDropTR,.pls-dropBottomL img,.pls-dropBottom img,.pls-dropBottomR img,.pls-bottomLeft{vertical-align:top}.pls-dropTR{background-position:0 -22px}.pls-dropBR{background-position:0 -27px}.pls-dropBL{background-position:0 -16px}.pls-spacertop,.pls-spacerright,.pls-spacerbottom,.pls-spacerleft{position:static !important}.pls-spinner{bottom:0;position:absolute;left:0;margin:auto;right:0;top:0}</style></head>
+<body class="post-template-default single single-post postid-53 single-format-video group-blog">
+<a class="sr-only sr-only-focusable" href="http://www.scullcom.uk/design-build-a-milliohm-meter/#content">Skip to main content</a>
+<div id="page" class="hfeed site">
+<header id="masthead" class="site-header" role="banner" style="margin-bottom: 76px;">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="container">
+<div class="row">
+<div class="site-navigation-inner col-sm-12">
+<div class="navbar-header">
+<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<div id="logo">
+<a href="http://www.scullcom.uk/"><img src="./Design &amp; Build a Milliohm Meter – Scullcom_files/logo_grey2.png" height="76" width="300" alt="Scullcom"></a>
+</div><!-- end of #logo -->
+</div>
+<div class="collapse navbar-collapse navbar-ex1-collapse"><ul id="menu-main-menu" class="nav navbar-nav"><li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-32"><a href="http://www.scullcom.uk/">Home</a></li>
+<li id="menu-item-36" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-36 dropdown"><a href="http://www.scullcom.uk/category/projects/">Projects </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-208" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-208"><a href="http://www.scullcom.uk/category/projects/">All Projects</a></li>
+<li id="menu-item-201" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-201"><a href="http://www.scullcom.uk/category/projects/5-volt-precision-reference/">5 Volt Precision Reference</a></li>
+<li id="menu-item-468" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-468"><a href="http://www.scullcom.uk/category/projects/constant-current-source-box/">Constant Current Source Box</a></li>
+<li id="menu-item-416" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-416"><a href="http://www.scullcom.uk/category/projects/dc-load/">DC Load</a></li>
+<li id="menu-item-469" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-469"><a href="http://www.scullcom.uk/category/projects/dc-voltage-calibrator/">DC Voltage Calibrator</a></li>
+<li id="menu-item-203" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-203"><a href="http://www.scullcom.uk/category/projects/diy-pcb-exposure-unit/">DIY PCB Exposure Unit</a></li>
+<li id="menu-item-199" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-199"><a href="http://www.scullcom.uk/category/projects/frequency-reference/">Frequency Reference</a></li>
+<li id="menu-item-200" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-200"><a href="http://www.scullcom.uk/category/projects/function-generator/">Function Generator</a></li>
+<li id="menu-item-502" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-502"><a href="http://www.scullcom.uk/category/projects/function-generator-mk2/">Function Generator Mk2</a></li>
+<li id="menu-item-204" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-204"><a href="http://www.scullcom.uk/category/projects/gps-system/">GPS System</a></li>
+<li id="menu-item-205" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-205"><a href="http://www.scullcom.uk/category/projects/led-floodlight/">LED Floodlight</a></li>
+<li id="menu-item-470" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-470"><a href="http://www.scullcom.uk/category/projects/low-current-reference/">Low Current Reference</a></li>
+<li id="menu-item-202" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-202"><a href="http://www.scullcom.uk/category/projects/milliohm-meter/">Milliohm Meter</a></li>
+<li id="menu-item-198" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-198"><a href="http://www.scullcom.uk/category/projects/millivolt-meter/">Millivolt Meter</a></li>
+<li id="menu-item-207" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-207"><a href="http://www.scullcom.uk/category/projects/precision-voltage-reference-box/">Precision Voltage Reference Box</a></li>
+<li id="menu-item-355" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-355"><a href="http://www.scullcom.uk/category/projects/stair-step-waveform-generator/">Stair-Step Waveform Generator</a></li>
+<li id="menu-item-389" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-389"><a href="http://www.scullcom.uk/category/projects/pulse-generator/">Pulse Generator</a></li>
+</ul>
+</li>
+<li id="menu-item-38" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-38"><a href="http://www.scullcom.uk/category/reviews/">Reviews</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-37"><a href="http://www.scullcom.uk/category/teardowns/">Teardowns</a></li>
+<li id="menu-item-132" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-132"><a href="http://www.scullcom.uk/category/tutorials/">Tutorials</a></li>
+<li id="menu-item-210" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-210 dropdown"><a href="http://www.scullcom.uk/category/basics/">Basics </a><span class="caret sparkling-dropdown"></span>
+<ul role="menu" class=" dropdown-menu">
+<li id="menu-item-218" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-218"><a href="http://www.scullcom.uk/category/basics/resistor/">Resistor</a></li>
+<li id="menu-item-219" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-219"><a href="http://www.scullcom.uk/category/basics/capacitor/">Capacitor</a></li>
+<li id="menu-item-221" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-221"><a href="http://www.scullcom.uk/category/basics/inductor/">Inductor</a></li>
+<li id="menu-item-220" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-220"><a href="http://www.scullcom.uk/category/basics/diode/">Diode</a></li>
+<li id="menu-item-245" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-245"><a href="http://www.scullcom.uk/category/basics/opto/">Opto</a></li>
+<li id="menu-item-222" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-222"><a href="http://www.scullcom.uk/category/basics/transistor/">Transistor</a></li>
+<li id="menu-item-223" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-223"><a href="http://www.scullcom.uk/category/basics/op-amp/">OP Amp</a></li>
+<li id="menu-item-224" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-224"><a href="http://www.scullcom.uk/category/basics/logic-gates/">Logic Gates</a></li>
+<li id="menu-item-243" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-243"><a href="http://www.scullcom.uk/category/basics/filters/">Filters</a></li>
+<li id="menu-item-246" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-246"><a href="http://www.scullcom.uk/category/basics/sensors/">Sensors</a></li>
+<li id="menu-item-244" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-244"><a href="http://www.scullcom.uk/category/basics/fuses/">Fuses</a></li>
+<li id="menu-item-242" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-242"><a href="http://www.scullcom.uk/category/basics/batteries/">Batteries</a></li>
+<li id="menu-item-247" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-247"><a href="http://www.scullcom.uk/category/basics/transformer/">Transformer</a></li>
+<li id="menu-item-241" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-241"><a href="http://www.scullcom.uk/category/basics/antenna/">Antenna</a></li>
+</ul>
+</li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="http://www.scullcom.uk/about/">About</a></li>
+</ul></div>					</div>
+</div>
+</div>
+</nav><!-- .site-navigation -->
+</header><!-- #masthead -->
+<div id="content" class="site-content">
+<div class="top-section">
+</div>
+<div class="container main-content-area">
+<div class="row side-pull-left">
+<div class="main-content-inner col-sm-12 col-md-8">
+<div id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+<article id="post-53" class="post-53 post type-post status-publish format-video has-post-thumbnail hentry category-milliohm-meter category-projects post_format-post-format-video">
+<img width="750" height="410" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/mom1-750x410.jpg" class="single-featured wp-post-image" alt="">	<div class="post-inner-content">
+<header class="entry-header page-header">
+<h1 class="entry-title ">Design &amp; Build a Milliohm Meter</h1>
+<div class="entry-meta">
+<span class="posted-on"><i class="fa fa-calendar"></i> <a href="http://www.scullcom.uk/design-build-a-milliohm-meter/" rel="bookmark"><time class="entry-date published" datetime="2015-10-17T15:26:59+00:00">17th October 2015</time><time class="updated" datetime="2016-10-10T21:23:54+00:00">10th October 2016</time></a></span><span class="byline"> <i class="fa fa-user"></i> <span class="author vcard"><a class="url fn n" href="http://www.scullcom.uk/author/louis/">Louis Scully</a></span></span>
+<span class="cat-links"><i class="fa fa-folder-open-o"></i>
+<a href="http://www.scullcom.uk/category/projects/milliohm-meter/" rel="category tag">Milliohm Meter</a>, <a href="http://www.scullcom.uk/category/projects/" rel="category tag">Projects</a>				</span>
+</div><!-- .entry-meta -->
+</header><!-- .entry-header -->
+<div class="entry-content">
+<p>In this project we will design and build a milliohm meter which is capable of measuring low resistance from 2 ohm to 0.1 milliohm with an accuracy of 0.1% or better. The unit will be easy to build and low cost.</p>
+<p><iframe width="648" height="365" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/anE0jDeBuxo.html" frameborder="0" allowfullscreen=""></iframe></p>
+<p>Below are the links to the circuit diagram and the PCB artwork and layout:</p>
+<ul>
+<li><a class="yt-uix-sessionlink " href="http://www.scullcom.com/Scullcom_Milliohm_Meter_Circuit.pdf" target="_blank" rel="nofollow" data-sessionlink="ei=XUzcVoSlC9STWpqhmaAP">http://www.scullcom.com/Scullcom_Milliohm_Meter_Circuit.pdf</a></li>
+<li><a class="yt-uix-sessionlink " href="http://www.scullcom.com/Milliohm_PCB_Circuit.pdf" target="_blank" rel="nofollow" data-sessionlink="ei=XUzcVoSlC9STWpqhmaAP">http://www.scullcom.com/Milliohm_PCB_Circuit.pdf</a></li>
+</ul>
+<p><img class="alignnone size-full wp-image-368" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/Image1.jpg" alt="Image1" width="857" height="665" srcset="http://www.scullcom.uk/wp-content/uploads/2015/10/Image1.jpg 857w, http://www.scullcom.uk/wp-content/uploads/2015/10/Image1-300x233.jpg 300w, http://www.scullcom.uk/wp-content/uploads/2015/10/Image1-768x596.jpg 768w" sizes="(max-width: 857px) 100vw, 857px"></p>
+<p style="text-align: center;"><img class="size-large wp-image-369 aligncenter" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/Image2-1024x633.jpg" alt="Image2" width="648" height="401" srcset="http://www.scullcom.uk/wp-content/uploads/2015/10/Image2-1024x633.jpg 1024w, http://www.scullcom.uk/wp-content/uploads/2015/10/Image2-300x186.jpg 300w, http://www.scullcom.uk/wp-content/uploads/2015/10/Image2-768x475.jpg 768w, http://www.scullcom.uk/wp-content/uploads/2015/10/Image2.jpg 1059w" sizes="(max-width: 648px) 100vw, 648px"><strong>Testing the project on a breadboard</strong></p>
+<p style="text-align: center;"><img class="alignnone size-full wp-image-370" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/Image3.jpg" alt="Image3" width="867" height="704" srcset="http://www.scullcom.uk/wp-content/uploads/2015/10/Image3.jpg 867w, http://www.scullcom.uk/wp-content/uploads/2015/10/Image3-300x244.jpg 300w, http://www.scullcom.uk/wp-content/uploads/2015/10/Image3-768x624.jpg 768w" sizes="(max-width: 867px) 100vw, 867px"><br>
+<strong>Surface mount IC’s soldered on the print side of the PCB</strong></p>
+<p><strong>Parts List Below:</strong></p>
+<ul>
+<li>1 x LT3092 (SOT-223 case format) Programmable Current Source.</li>
+<li>1 x LT1634 – 1.25v version Precision Shunt Regulator (SOIC Case format).</li>
+<li>1 x INA106 – Precision Diff. Amp. (SOIC Case Format).</li>
+<li>MAX680 – Dual Voltage Converter (DIL format).</li>
+<li>LM2940 – 5 volt Low Drop Regulator (TO-220 format)</li>
+<li>1 x 8 pin DIL socket.</li>
+<li>1 x small push button on/off latching switch.</li>
+<li>1 x 220uF 16 volt capacitor.</li>
+<li>4 x 4.7uF tantalum capacitors.</li>
+<li>8 x 100 ohm 0.1% resistors.</li>
+<li>1 x 56 ohm 0.1% resistor.</li>
+<li>1 x 10 ohm 0.1% resistor.</li>
+<li>1 x 499 Kohm 0.1% resistor.</li>
+<li>1 x 100 ohm 15 turn horizontal preset.</li>
+<li>1 x 100K 15 turn horizontal preset.</li>
+<li>6 x 4mm banana sockets</li>
+<li>1 x battery holder for 6 x AA batteries.</li>
+</ul>
+<p><strong>PCB available from OSH Park</strong></p>
+<p>A PCB (using surface mount components) designed by one of my subscribers “pbreviceps” (Greg).&nbsp;Greg has taken my design and produced a very high quality PCB (double sided).</p>
+<p>Checkout the details of this project on his website at:<br>
+<a href="http://www.barbouri.com/2016/05/27/milliohm-meter/">http://www.barbouri.com/2016/05/27/milliohm-meter/</a></p>
+<p>This is available from OSH Park (free delivery worldwide).</p>
+<p><img class="size-large wp-image-365 aligncenter" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/Barbouri_version-1024x586.jpg" alt="Barbouri_version" width="648" height="371" srcset="http://www.scullcom.uk/wp-content/uploads/2015/10/Barbouri_version-1024x586.jpg 1024w, http://www.scullcom.uk/wp-content/uploads/2015/10/Barbouri_version-300x172.jpg 300w, http://www.scullcom.uk/wp-content/uploads/2015/10/Barbouri_version-768x439.jpg 768w, http://www.scullcom.uk/wp-content/uploads/2015/10/Barbouri_version.jpg 1600w" sizes="(max-width: 648px) 100vw, 648px"></p>
+<p>Link to order the PCB is below:<br>
+<a href="https://oshpark.com/shared_projects/UWvehNO2">https://oshpark.com/shared_projects/UWvehNO2</a></p>
+<p><img class="alignnone size-full wp-image-366" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/Greg_PCB.jpg" alt="Greg_PCB" width="748" height="463" srcset="http://www.scullcom.uk/wp-content/uploads/2015/10/Greg_PCB.jpg 748w, http://www.scullcom.uk/wp-content/uploads/2015/10/Greg_PCB-300x186.jpg 300w" sizes="(max-width: 748px) 100vw, 748px"><br>
+The PCB design file is also available on this webpage to download (link below):<br>
+<a href="https://644db4de3505c40a0444-327723bce298e3ff5813fb42baeefbaa.ssl.cf1.rackcdn.com/5a5ef7b1d7e689f12a6941a2c994aa88.brd">https://644db4de3505c40a0444-327723bce298e3ff5813fb42baeefbaa.ssl.cf1.rackcdn.com/5a5ef7b1d7e689f12a6941a2c994aa88.brd</a></p>
+<p><strong>Details of Project update (23rd September 2016)</strong></p>
+<p>The latest update to this project uses the PCB designed by Greg as show above. The circuit has changed slightly in terms of the resistors used to set the current source. Also the values of the capacitors for the DC to DC charge pump circuit have been increased to 22μF. Additional decoupling on the IC power pins have been added.</p>
+<p><iframe width="648" height="365" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/y9gWZH9k_BQ.html" frameborder="0" allowfullscreen=""></iframe></p>
+<p>Below is the updated resistor network for the current source.</p>
+<p><img class="size-large wp-image-396 aligncenter" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/Current_Source_circuit.jpg" alt="current_source_circuit" width="648" height="572" srcset="http://www.scullcom.uk/wp-content/uploads/2015/10/Current_Source_circuit.jpg 875w, http://www.scullcom.uk/wp-content/uploads/2015/10/Current_Source_circuit-300x265.jpg 300w, http://www.scullcom.uk/wp-content/uploads/2015/10/Current_Source_circuit-768x678.jpg 768w" sizes="(max-width: 648px) 100vw, 648px"></p>
+<p>Below is the updated DC to DC charge pump circuit details:</p>
+<p><img class="size-full wp-image-395 aligncenter" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/Charge_Pump_and_Sense_circuit.jpg" alt="charge_pump_and_sense_circuit" width="816" height="771" srcset="http://www.scullcom.uk/wp-content/uploads/2015/10/Charge_Pump_and_Sense_circuit.jpg 816w, http://www.scullcom.uk/wp-content/uploads/2015/10/Charge_Pump_and_Sense_circuit-300x283.jpg 300w, http://www.scullcom.uk/wp-content/uploads/2015/10/Charge_Pump_and_Sense_circuit-768x726.jpg 768w" sizes="(max-width: 816px) 100vw, 816px"></p>
+<p><img class="size-large wp-image-397 aligncenter" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/PCB_components.jpg" alt="pcb_components" width="590" height="298" srcset="http://www.scullcom.uk/wp-content/uploads/2015/10/PCB_components.jpg 590w, http://www.scullcom.uk/wp-content/uploads/2015/10/PCB_components-300x152.jpg 300w" sizes="(max-width: 590px) 100vw, 590px"></p>
+<p><strong>SCULLCOM HOBBY ELECTRONICS – MILLIVOLT METER Mk2 PARTS LIST</strong><br>
+PCB is available from OSH Park. A PCB (using surface mount components) designed by one of my subscribers “pbreviceps” (Greg Christenson). Greg has taken my design and produced a very high quality PCB (double sided) and made it freely available to purchase from OSH Park (3 blank PCB’s are supplied at a cost of US$19.5 plus shipping costs). Direct link: https://oshpark.com/shared_projects/UWvehNO2<br>
+1&nbsp; x&nbsp; LM2940IMP-5.0 – SOT-223 (Farnell Order Code 1469076)<br>
+1&nbsp; x&nbsp; LT3092EST#PBF – SOT223 (Farnell Order Code 2295469)<br>
+1&nbsp; x&nbsp; LT1634BCS8-1.25#PBF NSOIC-8 (Farnell Order Code 1273451)<br>
+1&nbsp; x&nbsp; MAX680CSA+ NSOIC-8 (Farnell Order Code 9725717)<br>
+1&nbsp; x&nbsp; INA106U – SOIC (Farnell Order Code 1212395)<br>
+4&nbsp; x&nbsp; 56.2 Ω 250 mW, ± 0.1% ±15ppm/°C (Farnell Order Code 9503277 or 1751304)<br>
+1&nbsp; x&nbsp; 63.4 Ω 250 mW, ± 0.1% ±15ppm/°C (Farnell Order Code 1083123)<br>
+1&nbsp; x&nbsp; 10 Ω 250 mW, ± 0.1% ±15ppm/°C (Farnell Order Code 1083036)<br>
+1&nbsp; x&nbsp; 100 Ω 250 mW, ± 0.1% ±15ppm/°C (Farnell Order Code 9499865 or 1083143)<br>
+1&nbsp; x&nbsp; 499 KΩ 250 mW, ± 0.1% ±15ppm/°C (Farnell Order Code 1083547)<br>
+1&nbsp; x&nbsp; 220 μF 35v electrolytic (Farnell Order Code 1144628) or similar<br>
+4&nbsp; x&nbsp; 22 μF 25v electrolytic (Farnell Order Code 2079085) or similar<br>
+5&nbsp; x&nbsp; 0.1 μF ceramic (Farnell Order Code 2529480) or similar<br>
+1&nbsp; x&nbsp; 100 Ω preset (BOURNS 3296P-1-101LF TRIMMER, 25 TURN 100R (Farnell Order Code 9353020)<br>
+1&nbsp; x&nbsp; 100 KΩ preset (BOURNS 3296P-1-104LF TRIMMER, POT, 100K, 10%, 25TURN, (Farnell Order Code 9353054)<br>
+1 x 4 ½ Digit High Precision +/- 2V 0-1.9999V Red LED Digital Panel Meter.<br>
+From seller yourcartmax on eBay. Direct link below:<br>
+http://www.ebay.co.uk/itm/261284812938?_trksid=p2057872.m2749.l2649ssPageName=STRK%3AMEBIDX%3AIT<br>
+or alternative from eBay seller coldfusionx, direct link: http://www.ebay.com/itm/350261421976<br>
+1 x Black textured ABS enclosure with sloping panel. 150mm length, 95mm width, height slopes from 33.2 to 49.5mm. From www.rapidonline.com (Order Code: 30-3606). Direct link below:<br>
+https://www.rapidonline.com/rapid-g1168b-150x95x50-black-case-30-3606<br>
+1 x PP3 9V Battery Holder Clip Connector. From seller utronix_ltd on eBay.<br>
+http://www.ebay.co.uk/itm/PP3-9V-BATTERY-HOLDER-CLIP-CONNECTOR-IDEAL-FOR-GUITAR-EFFECTS-PEDAL-/262341198335?hash=item3d14c101ff:g:DVkAAOSw-itXsZc-<br>
+High quality Alligator Kelvin Test gold plated clip 2 Colors Red + Black. From seller louisliu2009 on eBay. Direct link below:<br>
+http://www.ebay.co.uk/itm/4pcs-High-quality-Alligator-Kelvin-Test-gold-plated-clip-2-Colors-Red-Black-/180779978390?hash=item2a17538e96:g:SlgAAMXQ-3NRnBmn<br>
+2&nbsp; x&nbsp; 4mm Insulated Test Socket Red (Rapid order code 17-2677) or similar<br>
+2&nbsp; x&nbsp; 4mm Insulated Test Socket Black (Rapid order code 17-2674) or similar<br>
+1&nbsp; x&nbsp; 4mm Insulated Test Socket Yellow (Rapid order code 17-2679) or similar<br>
+1&nbsp; x&nbsp; 4mm Insulated Test Socket Green (Rapid order code 17-2676) or similar<br>
+The 4mm sockets available from Rapid, direct link below: or similar<br>
+https://www.rapidonline.com/4mm-insulated-test-socket-83057<br>
+1&nbsp; x&nbsp; On/Off switch either toggle or push button<br>
+1&nbsp; x&nbsp; 2.1mm pin diameter DC power socket (Rapid order code 50-3276) or similar<br>
+https://www.rapidonline.com/cliff-electronic-fc681445-dc-socket-5-5-x-2-1mm-model-scd-026-50-3276</p>
+<p>Greg has now design a new version (Version 1.5) of the PCB which now has 5 volt supply connections for the panel meter. This version of the PCB is available from:</p>
+<p><a href="https://oshpark.com/shared_projects/oxbxvp22" target="_blank">https://oshpark.com/shared_projects/oxbxvp22</a></p>
+<p><img class="size-full wp-image-398 aligncenter" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/Milliohm_Meter_PCB_ver1_5.jpg" alt="milliohm_meter_pcb_ver1_5" width="738" height="452" srcset="http://www.scullcom.uk/wp-content/uploads/2015/10/Milliohm_Meter_PCB_ver1_5.jpg 738w, http://www.scullcom.uk/wp-content/uploads/2015/10/Milliohm_Meter_PCB_ver1_5-300x184.jpg 300w" sizes="(max-width: 738px) 100vw, 738px"></p>
+<p>Check out the link below on Greg’s website which show details of his take on this project:</p>
+<p><a href="http://www.barbouri.com/2016/10/09/milliohm-meter-version-1-5/" target="_blank">http://www.barbouri.com/2016/10/09/milliohm-meter-version-1-5/</a></p>
+<p><strong>Below information about the IC’s used in this project</strong></p>
+<p>The <strong>LT3092EST#PBF</strong> is a programmable 2-terminal Current Source. It requires only two resistors to set an output current between 0.5 and 200mA. It is stable without input and output capacitors, offering high DC and AC impedance. The SET pin features 1% initial accuracy and low temperature coefficient. Current regulation is better than 10ppm/V from 1.5 to 40V.</p>
+<p>The <strong>LT1634</strong> series micropower precision shunt Voltage Reference for use with calibrators. The band-gap reference uses trimmed precision thin film resistors to achieve 0.05% initial voltage accuracy. Improved curvature correction technique guarantees 10ppm/°C maximum temperature drift. Advances in design guarantee 10µA operation and low temperature cycling hysteresis. The LT1634 does not require an output compensation capacitor, but is stable with capacitive loads. Low dynamic impedance makes the LT1634 reference easy to use from unregulated supplies.</p>
+<p>The <strong>INA106U</strong> is a precision fixed-gain Differential Amplifier consisting of a precision op amp and on-chip metal film resistors. The resistors are laser trimmed for accurate gain and high common-mode rejection. Excellent TCR tracking of the resistors maintains gain accuracy and common-mode rejection over temperature. It has a gain typical error of ±0.01%, and a typical non-linearity error of 0.0002%.</p>
+<p>The <strong>LM2940IMP-5.0/NOPB</strong> is a positive Voltage Regulator features the ability to source 1A of output current with a dropout voltage of typically 0.5V and a maximum of 1V over the entire temperature range. It has built-in Internal Short Circuit Current Limit and Reverse Battery Protection. Furthermore, a quiescent current reduction circuit has been included which reduces the ground current when the differential between the input voltage and the output voltage exceeds approximately 3V. The quiescent current with 1A of output current and an input-output differential of 5V is therefore only 30mA. Higher quiescent currents only exist when the regulator is in the dropout mode (VIN-VOUT &lt;=3V).</p>
+<div class="apss-social-share apss-theme-3 clearfix">
+<div class="apss-facebook apss-single-icon">
+<a rel="nofollow" title="Share on Facebook" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.scullcom.uk/design-build-a-milliohm-meter/">
+<div class="apss-icon-block clearfix">
+<i class="fa fa-facebook"></i>
+<span class="apss-social-text">Share on Facebook</span>
+<span class="apss-share">Share</span>
+</div>
+<div class="count apss-count" data-url="http://www.scullcom.uk/design-build-a-milliohm-meter/" data-social-network="facebook" data-social-detail="http://www.scullcom.uk/design-build-a-milliohm-meter/_facebook">0</div>
+</a>
+</div>
+<div class="apss-twitter apss-single-icon">
+<a rel="nofollow" href="https://twitter.com/intent/tweet?text=Design%20%26%20Build%20a%20Milliohm%20Meter&amp;url=http%3A%2F%2Fwww.scullcom.uk%2Fdesign-build-a-milliohm-meter%2F&amp;" title="Share on Twitter" target="_blank">
+<div class="apss-icon-block clearfix">
+<i class="fa fa-twitter"></i>
+<span class="apss-social-text">Share on Twitter</span><span class="apss-share">Tweet</span>
+</div>
+<div class="count apss-count" data-url="http://www.scullcom.uk/design-build-a-milliohm-meter/" data-social-network="twitter" data-social-detail="http://www.scullcom.uk/design-build-a-milliohm-meter/_twitter">0</div>
+</a>
+</div>
+<div class="apss-google-plus apss-single-icon">
+<a rel="nofollow" title="Share on Google Plus" target="_blank" href="https://plus.google.com/share?url=http://www.scullcom.uk/design-build-a-milliohm-meter/">
+<div class="apss-icon-block clearfix">
+<i class="fa fa-google-plus"></i>
+<span class="apss-social-text">Share on Google Plus</span>
+<span class="apss-share">Share</span>
+</div>
+</a>
+</div>
+<div class="apss-pinterest apss-single-icon">
+<a rel="nofollow" title="Share on Pinterest" href="javascript:pinIt();">
+<div class="apss-icon-block clearfix">
+<i class="fa fa-pinterest"></i>
+<span class="apss-social-text">Share on Pinterest</span>
+<span class="apss-share">Share</span>
+</div>
+<div class="count apss-count" data-url="http://www.scullcom.uk/design-build-a-milliohm-meter/" data-social-network="pinterest" data-social-detail="http://www.scullcom.uk/design-build-a-milliohm-meter/_pinterest">0</div>
+</a>
+</div>
+<div class="apss-email apss-single-icon">
+<a rel="nofollow" class="share-email-popup" title="Share it on Email" target="_blank" href="mailto:?subject=Please%20visit%20this%20link%20http://www.scullcom.uk/design-build-a-milliohm-meter/&amp;body=Hi!,%20I%20found%20this%20information%20for%20you:%20%22Design%20%26%20Build%20a%20Milliohm%20Meter%22.%20Here%20is%20the%20website%20link:%20http://www.scullcom.uk/design-build-a-milliohm-meter/.%20Thank%20you.">
+<div class="apss-icon-block clearfix">
+<i class="fa  fa-envelope"></i>
+<span class="apss-social-text">Send email</span>
+<span class="apss-share">Mail</span>
+</div>
+</a>
+</div>
+</div>					</div><!-- .entry-content -->
+<footer class="entry-meta">
+</footer><!-- .entry-meta -->
+</div>
+</article><!-- #post-## -->
+<div id="comments" class="comments-area">
+<h2 class="comments-title">
+9 thoughts to “Design &amp; Build a Milliohm Meter”		</h2>
+<ol class="comment-list">
+<li id="comment-17" class="comment even thread-even depth-1">
+<article id="div-comment-17" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/5dbb8ce7cecca8352b04a09ab166358f.png" srcset="http://2.gravatar.com/avatar/5dbb8ce7cecca8352b04a09ab166358f?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">Paul Versteeg</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="http://www.scullcom.uk/design-build-a-milliohm-meter/#comment-17">
+<time datetime="2016-10-17T09:41:44+00:00">
+17th October 2016 at 9:41 am							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>Hi Louis,</p>
+<p>This project gets better and better. Good work!</p>
+<p>I have a possible alternative for the precision resistors.<br>
+Both the Welwyn RC55Y series (at 2.56 Euro’s a piece) and the Holsworthy H856 series (at 1.72 Euro’s each) are pretty expensive. Greg ordered a high number of  0.25 cent 1% 50PPM/K resistors (100 for the 56R2 and 20 of the 63R4) resistors and did his own matching to get near the precision of 0,1% and 15PPM/C. However, Mouser has the NEOHM YR1B series with the required precision (0.1%) and a TC of 15 PPM/C for only 0.25 Euro’s in single quantities for all the required resistors (63R4, 56R2, 100R, 499K and 10R). Digikey has them too, but only in minimum quantities of 1,000 pieces. There are only 8 resistors required, but when you’re on a tight budget and can get them all for the price of one…</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="http://www.scullcom.uk/design-build-a-milliohm-meter/?replytocom=17#respond" onclick="return addComment.moveForm( &quot;div-comment-17&quot;, &quot;17&quot;, &quot;respond&quot;, &quot;53&quot; )" aria-label="Reply to Paul Versteeg" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+<li id="comment-32" class="comment odd alt thread-odd thread-alt depth-1">
+<article id="div-comment-32" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/90b451df64ecf1bfef946d08cba3b920.png" srcset="http://0.gravatar.com/avatar/90b451df64ecf1bfef946d08cba3b920?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn"><a href="http://none/" rel="external nofollow" class="url">Ion</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="http://www.scullcom.uk/design-build-a-milliohm-meter/#comment-32">
+<time datetime="2017-04-09T19:25:06+00:00">
+9th April 2017 at 7:25 pm							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>Hello Louis,<br>
+I looked through the whole project and i did not see a complete schematic diagram.<br>
+I would like to look and study the schematic before, then i will order the PCB and parts.<br>
+I want ot understand how it works.<br>
+I am a visual person and looking at at schematic is better than reading.<br>
+By the way, who drive your LCD display.<br>
+I did not see any microprocessor on your drawings.<br>
+Please reply to my email because i might miss your reply here.<br>
+Thank you<br>
+Ion.</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="http://www.scullcom.uk/design-build-a-milliohm-meter/?replytocom=32#respond" onclick="return addComment.moveForm( &quot;div-comment-32&quot;, &quot;32&quot;, &quot;respond&quot;, &quot;53&quot; )" aria-label="Reply to Ion" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+<li id="comment-61" class="comment even thread-even depth-1">
+<article id="div-comment-61" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/bc91fba77306e524a3a5d3f79182641e.png" srcset="http://2.gravatar.com/avatar/bc91fba77306e524a3a5d3f79182641e?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">James Hauser</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="http://www.scullcom.uk/design-build-a-milliohm-meter/#comment-61">
+<time datetime="2017-10-25T03:08:50+00:00">
+25th October 2017 at 3:08 am							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>Is the parts list labeled wrong from the pcb board??  I see this in several locations.</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="http://www.scullcom.uk/design-build-a-milliohm-meter/?replytocom=61#respond" onclick="return addComment.moveForm( &quot;div-comment-61&quot;, &quot;61&quot;, &quot;respond&quot;, &quot;53&quot; )" aria-label="Reply to James Hauser" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+<li id="comment-273" class="comment odd alt thread-odd thread-alt depth-1 parent">
+<article id="div-comment-273" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/cd2ad6fd713ae527f8cb1d8055965614.png" srcset="http://0.gravatar.com/avatar/cd2ad6fd713ae527f8cb1d8055965614?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">Henry</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="http://www.scullcom.uk/design-build-a-milliohm-meter/#comment-273">
+<time datetime="2018-11-03T10:48:30+00:00">
+3rd November 2018 at 10:48 am							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>Hi, I like your website and the youtube channel very much and already built some stuff (i.e. current box, milliohm meter). All working very good. I ordered 3 MilliOhmMeter PCB‘s from OshPark v1.5. If someone is interested, 2 are left over. I‘m from germany, so delivery within germany would be preferred (or europe) not overseas, too expensive I think. 7€ plus shipping.</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="http://www.scullcom.uk/design-build-a-milliohm-meter/?replytocom=273#respond" onclick="return addComment.moveForm( &quot;div-comment-273&quot;, &quot;273&quot;, &quot;respond&quot;, &quot;53&quot; )" aria-label="Reply to Henry" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+<li id="comment-275" class="comment even depth-2 parent">
+<article id="div-comment-275" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/59b359068a22e9fa59c8ca5ac4faa992.png" srcset="http://2.gravatar.com/avatar/59b359068a22e9fa59c8ca5ac4faa992?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">George</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="http://www.scullcom.uk/design-build-a-milliohm-meter/#comment-275">
+<time datetime="2018-11-03T22:57:06+00:00">
+3rd November 2018 at 10:57 pm							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>I can’t figure out what is wrong but I get an error. -0.002 and some times -0.001 when the leads are shorted. </p>
+<p>Any help pls</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="http://www.scullcom.uk/design-build-a-milliohm-meter/?replytocom=275#respond" onclick="return addComment.moveForm( &quot;div-comment-275&quot;, &quot;275&quot;, &quot;respond&quot;, &quot;53&quot; )" aria-label="Reply to George" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+<li id="comment-276" class="comment odd alt depth-3 parent">
+<article id="div-comment-276" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/cd2ad6fd713ae527f8cb1d8055965614.png" srcset="http://0.gravatar.com/avatar/cd2ad6fd713ae527f8cb1d8055965614?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">Henry</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="http://www.scullcom.uk/design-build-a-milliohm-meter/#comment-276">
+<time datetime="2018-11-04T08:39:32+00:00">
+4th November 2018 at 8:39 am							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>Apply a small voltage i.e. from a 1.5V battery to the input of the panel-meter. Desolder the input wires from the PCB frst! Do you get a reading of about 1.5? If so, the panel-meter is ok. Solder the wires back to the PCB. Apply a small voltage (less than 200mv = 0,2V, use a 1:10 divider with the 1.5V battery) to the sense input of the pcb. Do you get a reading on the panel-meter? If not, inspect the sense part. Are the supply voltages for the INA present? +/-10V as generated by the MAX680? With shorted sense input you should be able to adjust the reading to zero, using the 100k trimmer. If you have been able to adjust the source part to 100mA, this part should be ok. To be sure, measure the voltage from pin 6 to pin 4 of the LT1634. You should get 1.25V with very litte deviation. Hope this helps.</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="http://www.scullcom.uk/design-build-a-milliohm-meter/?replytocom=276#respond" onclick="return addComment.moveForm( &quot;div-comment-276&quot;, &quot;276&quot;, &quot;respond&quot;, &quot;53&quot; )" aria-label="Reply to Henry" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+<ol class="children">
+<li id="comment-277" class="comment even depth-4">
+<article id="div-comment-277" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/cd2ad6fd713ae527f8cb1d8055965614.png" srcset="http://0.gravatar.com/avatar/cd2ad6fd713ae527f8cb1d8055965614?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">Henry</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="http://www.scullcom.uk/design-build-a-milliohm-meter/#comment-277">
+<time datetime="2018-11-04T08:48:09+00:00">
+4th November 2018 at 8:48 am							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>Hint, to measure the 1.25V of the LT1634 the source output has to be shorted or a small (less than 2Ohm) resistor connected! I had a fault too. I used three 4.7Ohm 0,1% resistors in series instead of 4 56Ohm in parallel. but it didn’t work. Until I realized, that I have been sent 4.7k resistors, labeled as 4.7Ohm. Took me some time. So carefully check the resistors too.</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="http://www.scullcom.uk/design-build-a-milliohm-meter/?replytocom=277#respond" onclick="return addComment.moveForm( &quot;div-comment-277&quot;, &quot;277&quot;, &quot;respond&quot;, &quot;53&quot; )" aria-label="Reply to Henry" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+<li id="comment-274" class="comment odd alt thread-even depth-1">
+<article id="div-comment-274" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/59b359068a22e9fa59c8ca5ac4faa992.png" srcset="http://2.gravatar.com/avatar/59b359068a22e9fa59c8ca5ac4faa992?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">George</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="http://www.scullcom.uk/design-build-a-milliohm-meter/#comment-274">
+<time datetime="2018-11-03T22:54:52+00:00">
+3rd November 2018 at 10:54 pm							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>I get 0.001 always no mater what resistance is sensed. I have adjusted the current to 100mA. Already spend on populating two pcb. </p>
+<p>Any help pls.</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="http://www.scullcom.uk/design-build-a-milliohm-meter/?replytocom=274#respond" onclick="return addComment.moveForm( &quot;div-comment-274&quot;, &quot;274&quot;, &quot;respond&quot;, &quot;53&quot; )" aria-label="Reply to George" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+<li id="comment-279" class="comment even thread-odd thread-alt depth-1">
+<article id="div-comment-279" class="comment-body">
+<footer class="comment-meta">
+<div class="comment-author vcard">
+<img alt="" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/0bb28366973506e8fa47d068f4507d5d.png" srcset="http://0.gravatar.com/avatar/0bb28366973506e8fa47d068f4507d5d?s=120&amp;d=mm&amp;r=g 2x" class="avatar avatar-60 photo" height="60" width="60">						<b class="fn">Mark Pettitt</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+<div class="comment-metadata">
+<a href="http://www.scullcom.uk/design-build-a-milliohm-meter/#comment-279">
+<time datetime="2018-11-08T17:49:14+00:00">
+8th November 2018 at 5:49 pm							</time>
+</a>
+</div><!-- .comment-metadata -->
+</footer><!-- .comment-meta -->
+<div class="comment-content">
+<p>Hi has anyone got the fascia design for the constant current source box they could share with me?<br>
+Thanks<br>
+Mark.</p>
+</div><!-- .comment-content -->
+<div class="reply"><a rel="nofollow" class="comment-reply-link btn btn-sm btn-default" href="http://www.scullcom.uk/design-build-a-milliohm-meter/?replytocom=279#respond" onclick="return addComment.moveForm( &quot;div-comment-279&quot;, &quot;279&quot;, &quot;respond&quot;, &quot;53&quot; )" aria-label="Reply to Mark Pettitt" style="display: inline;">Reply</a></div>			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .comment-list -->
+<div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://www.scullcom.uk/design-build-a-milliohm-meter/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://www.scullcom.uk/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
+<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required="true" required="required"></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required="true" required="required"></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200"></p>
+<div class="anr_captcha_field"><div id="anr_captcha_field_1"><div style="width: 304px; height: 78px;"><div><iframe src="./Design &amp; Build a Milliohm Meter – Scullcom_files/anchor.html" width="304" height="78" role="presentation" name="a-7ha1j7mtul2z" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/saved_resource(1).html"></iframe></div></div><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit btn btn-default" value="Post Comment" style="display: inline-block;"> <input type="hidden" name="comment_post_ID" value="53" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a6aa50e297"></p><p style="display: none;"></p>			<input type="hidden" id="ak_js" name="ak_js" value="1593186483521"></form>
+</div><!-- #respond -->
+</div><!-- #comments -->
+<nav class="navigation post-navigation" role="navigation">
+<h2 class="screen-reader-text">Post navigation</h2>
+<div class="nav-links"><div class="nav-previous"><a href="http://www.scullcom.uk/drok-dc-to-dc-converter-upgrade/" rel="prev"><i class="fa fa-chevron-left"></i> <span class="post-title">DROK DC to DC Converter Upgrade</span></a></div><div class="nav-next"><a href="http://www.scullcom.uk/design-build-6%c2%bd-digit-millivolt-meter-part-1/" rel="next"><span class="post-title">Design &amp; Build 6½ Digit Millivolt Meter – Part 1 <i class="fa fa-chevron-right"></i></span></a></div></div>
+</nav>
+</main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- close .main-content-inner -->
+<div id="secondary" class="widget-area col-sm-12 col-md-4" role="complementary">
+<div class="well">
+<aside id="youtubesubscribebuttonwidget-4" class="widget widget_youtubesubscribebuttonwidget">								<div id="___ytsubscribe_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 207px; height: 48px;"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 207px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I0_1593186483493" name="I0_1593186483493" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/subscribe_embed.html" data-gapiattached="true"></iframe></div>
+<div id="youtubebuttcredit" style="display: none;"></div>
+<script type="text/javascript">document.getElementById("youtubebuttcredit").style.display="none";window.___gcfg = {lang: 'en'};(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>			</aside>		<aside id="search-2" class="widget widget_search">
+<form role="search" method="get" class="form-search" action="http://www.scullcom.uk/">
+<div class="input-group">
+<label class="screen-reader-text" for="s">Search for:</label>
+<input type="text" class="form-control search-query" placeholder="Search…" value="" name="s" title="Search for:">
+<span class="input-group-btn">
+<button type="submit" class="btn btn-default" name="submit" id="searchsubmit" value="Search" style=""><span class="glyphicon glyphicon-search"></span></button>
+</span>
+</div>
+</form>
+</aside><aside id="categories-2" class="widget widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+<li class="cat-item cat-item-12"><a href="http://www.scullcom.uk/category/projects/5-volt-precision-reference/">5 Volt Precision Reference</a>
+</li>
+<li class="cat-item cat-item-18"><a href="http://www.scullcom.uk/category/basics/">Basics</a>
+</li>
+<li class="cat-item cat-item-14"><a href="http://www.scullcom.uk/category/projects/constant-current-source-box/">Constant Current Source Box</a>
+</li>
+<li class="cat-item cat-item-36"><a href="http://www.scullcom.uk/category/projects/dc-load/">DC Load</a>
+</li>
+<li class="cat-item cat-item-40"><a href="http://www.scullcom.uk/category/projects/dc-voltage-calibrator/">DC Voltage Calibrator</a>
+</li>
+<li class="cat-item cat-item-11"><a href="http://www.scullcom.uk/category/projects/diy-pcb-exposure-unit/">DIY PCB Exposure Unit</a>
+</li>
+<li class="cat-item cat-item-4"><a href="http://www.scullcom.uk/category/projects/frequency-reference/">Frequency Reference</a>
+</li>
+<li class="cat-item cat-item-10"><a href="http://www.scullcom.uk/category/projects/function-generator/">Function Generator</a>
+</li>
+<li class="cat-item cat-item-41"><a href="http://www.scullcom.uk/category/projects/function-generator-mk2/">Function Generator Mk2</a>
+</li>
+<li class="cat-item cat-item-15"><a href="http://www.scullcom.uk/category/projects/gps-system/">GPS System</a>
+</li>
+<li class="cat-item cat-item-16"><a href="http://www.scullcom.uk/category/projects/led-floodlight/">LED Floodlight</a>
+</li>
+<li class="cat-item cat-item-33"><a href="http://www.scullcom.uk/category/projects/low-current-reference/">Low Current Reference</a>
+</li>
+<li class="cat-item cat-item-8"><a href="http://www.scullcom.uk/category/projects/milliohm-meter/">Milliohm Meter</a>
+</li>
+<li class="cat-item cat-item-9"><a href="http://www.scullcom.uk/category/projects/millivolt-meter/">Millivolt Meter</a>
+</li>
+<li class="cat-item cat-item-24"><a href="http://www.scullcom.uk/category/basics/op-amp/">OP Amp</a>
+</li>
+<li class="cat-item cat-item-17"><a href="http://www.scullcom.uk/category/projects/precision-voltage-reference-box/">Precision Voltage Reference Box</a>
+</li>
+<li class="cat-item cat-item-5"><a href="http://www.scullcom.uk/category/projects/">Projects</a>
+</li>
+<li class="cat-item cat-item-35"><a href="http://www.scullcom.uk/category/projects/pulse-generator/">Pulse Generator</a>
+</li>
+<li class="cat-item cat-item-19"><a href="http://www.scullcom.uk/category/basics/resistor/">Resistor</a>
+</li>
+<li class="cat-item cat-item-7"><a href="http://www.scullcom.uk/category/reviews/">Reviews</a>
+</li>
+<li class="cat-item cat-item-34"><a href="http://www.scullcom.uk/category/projects/stair-step-waveform-generator/">Stair-Step Waveform Generator</a>
+</li>
+<li class="cat-item cat-item-6"><a href="http://www.scullcom.uk/category/teardowns/">Teardowns</a>
+</li>
+<li class="cat-item cat-item-13"><a href="http://www.scullcom.uk/category/tutorials/">Tutorials</a>
+</li>
+<li class="cat-item cat-item-1"><a href="http://www.scullcom.uk/category/uncategorised/">Uncategorised</a>
+</li>
+<li class="cat-item cat-item-39"><a href="http://www.scullcom.uk/category/projects/zx80/">ZX80</a>
+</li>
+</ul>
+</aside><aside id="archives-2" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+<li><a href="http://www.scullcom.uk/2018/08/">August 2018</a></li>
+<li><a href="http://www.scullcom.uk/2017/12/">December 2017</a></li>
+<li><a href="http://www.scullcom.uk/2017/06/">June 2017</a></li>
+<li><a href="http://www.scullcom.uk/2016/12/">December 2016</a></li>
+<li><a href="http://www.scullcom.uk/2016/11/">November 2016</a></li>
+<li><a href="http://www.scullcom.uk/2016/09/">September 2016</a></li>
+<li><a href="http://www.scullcom.uk/2016/06/">June 2016</a></li>
+<li><a href="http://www.scullcom.uk/2016/05/">May 2016</a></li>
+<li><a href="http://www.scullcom.uk/2016/03/">March 2016</a></li>
+<li><a href="http://www.scullcom.uk/2016/02/">February 2016</a></li>
+<li><a href="http://www.scullcom.uk/2016/01/">January 2016</a></li>
+<li><a href="http://www.scullcom.uk/2015/12/">December 2015</a></li>
+<li><a href="http://www.scullcom.uk/2015/10/">October 2015</a></li>
+<li><a href="http://www.scullcom.uk/2015/09/">September 2015</a></li>
+<li><a href="http://www.scullcom.uk/2015/08/">August 2015</a></li>
+<li><a href="http://www.scullcom.uk/2015/07/">July 2015</a></li>
+<li><a href="http://www.scullcom.uk/2015/05/">May 2015</a></li>
+<li><a href="http://www.scullcom.uk/2015/04/">April 2015</a></li>
+<li><a href="http://www.scullcom.uk/2015/03/">March 2015</a></li>
+<li><a href="http://www.scullcom.uk/2015/02/">February 2015</a></li>
+</ul>
+</aside><aside id="recent-comments-2" class="widget widget_recent_comments"><h3 class="widget-title">Recent Comments</h3><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link">PROBIR DEBNATH</span> on <a href="http://www.scullcom.uk/design-build-an-electronic-dc-load-part-1/#comment-514">Design &amp; Build an Electronic DC Load</a></li><li class="recentcomments"><span class="comment-author-link">Dave</span> on <a href="http://www.scullcom.uk/dc-voltage-calibrator/#comment-512">DC Voltage Calibrator</a></li><li class="recentcomments"><span class="comment-author-link"><a href="http://www.jpes.com/" rel="external nofollow" class="url">James Paul</a></span> on <a href="http://www.scullcom.uk/dc-voltage-calibrator/#comment-510">DC Voltage Calibrator</a></li><li class="recentcomments"><span class="comment-author-link">Dave</span> on <a href="http://www.scullcom.uk/dc-voltage-calibrator/#comment-507">DC Voltage Calibrator</a></li><li class="recentcomments"><span class="comment-author-link">Berkin Kartal</span> on <a href="http://www.scullcom.uk/design-build-an-electronic-dc-load-part-1/#comment-506">Design &amp; Build an Electronic DC Load</a></li></ul></aside><aside id="text-2" class="widget widget_text"><h3 class="widget-title">Meta</h3>			<div class="textwidget"><ul>
+<li>
+<a href="http://www.scullcom.uk/wp-login.php">Log In</a>
+</li>
+<li>
+<a href="http://www.scullcom.uk/?feed=rss2">Posts RSS</a>
+</li>
+<li>
+<a href="http://www.scullcom.uk/?feed=comments-rss2">Posts RSS</a>
+</li>
+</ul></div>
+</aside>	</div>
+</div><!-- #secondary -->
+		</div><!-- close .row -->
+</div><!-- close .container -->
+</div><!-- close .site-content -->
+<div id="footer-area">
+<div class="container footer-inner">
+<div class="row">
+</div>
+</div>
+<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="site-info container">
+<div class="row">
+<nav role="navigation" class="col-md-6">
+</nav>
+<div class="copyright col-md-6">
+Scullcom.uk all lefts reversed 						Theme by <a href="http://colorlib.com/" target="_blank">Colorlib</a> Powered by <a href="http://wordpress.org/" target="_blank">WordPress</a>					</div>
+</div>
+</div><!-- .site-info -->
+<div class="scroll-to-top"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
+</footer><!-- #colophon -->
+</div>
+</div><!-- #page -->
+<script type="text/javascript">
+jQuery( document ).ready( function( $ ){
+if ( $( window ).width() >= 767 ){
+$( '.navbar-nav > li.menu-item > a' ).click( function(){
+if( $( this ).attr('target') !== '_blank' ){
+window.location = $( this ).attr( 'href' );
+}
+});
+}
+});
+</script>
+<script type="text/javascript">
+var anr_onloadCallback = function() {
+var anr_captcha_1;
+anr_captcha_1 = grecaptcha.render('anr_captcha_field_1', {
+'sitekey' : '6LdMaxoTAAAAAO_z9VYWyJZuLeFIcjMuhm3P9UYy',
+'theme' : 'light',
+'size' : 'normal'
+});
+};
+</script>
+<script src="./Design &amp; Build a Milliohm Meter – Scullcom_files/api.js.download" async="" defer="">
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var frontend_ajax_object = {"ajax_url":"http:\/\/www.scullcom.uk\/wp-admin\/admin-ajax.php","ajax_nonce":"573cd988ee"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/frontend.js.download"></script>
+<script type="text/javascript" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/skip-link-focus-fix.min.js.download"></script>
+<script type="text/javascript" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/comment-reply.min.js.download"></script>
+<script type="text/javascript" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/wp-embed.min.js.download"></script>
+<script async="async" type="text/javascript" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/form.js.download"></script>
+
+<iframe name="oauth2relay751339218" id="oauth2relay751339218" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe><div style="background-color: rgb(255, 255, 255); border: 1px solid rgb(204, 204, 204); box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 3px; position: absolute; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0; visibility: hidden; z-index: 2000000000; left: 0px; top: -10000px;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.05;"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0px; height: 0px; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe title="recaptcha challenge" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/bframe.html" name="c-7ha1j7mtul2z" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div><div style="display: block; visibility: hidden; position: absolute; width: 106px; left: -1000px; top: -1000px;"><table cellpadding="0" cellspacing="0" dir="ltr" style="width:106px;" frame="void" rules="none" class=" gc-bubbleDefault pls-container"><tbody><tr class="gc-reset"><td class="pls-topLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/border_3.gif"></td><td class="pls-topTail gc-reset"><img class="pls-tailbottom gc-reset" style="width:15px !important; height:9px !important; max-width: 15px !important; max-height: 9px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"><img class="pls-spacerbottom gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"></td><td class="pls-topRight gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/border_3.gif"></td></tr><tr class="gc-reset"><td class="pls-vertShimLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"></td><td class="pls-vertShim gc-reset"><img class="gc-reset" style="width:1px !important; height:4px !important; max-width: 1px !important; max-height: 4px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"></td><td class="pls-vertShimRight gc-reset"><img class="pls-dropTR gc-reset" style="width:5px !important; height:4px !important; max-width: 5px !important; max-height: 4px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-contentLeft gc-reset"><img class="pls-tailright gc-reset" style="width:9px !important; height:15px !important; max-width: 9px !important; max-height: 15px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"><img class="pls-spacerright gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"></td><td class="pls-contentWrap gc-reset"><div class="goog-bubble-content gc-reset"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="margin:0px;position:absolute;z-index:1;border-style:none;outline:none;width:100px;" tabindex="0" vspace="0" width="100%" id="I0_1593186483984" name="I0_1593186483984" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/subscribe_embed(1).html"></iframe></div></td><td class="pls-dropRight gc-reset"><img class="pls-tailleft gc-reset" style="width:12px !important; height:19px !important; max-width: 12px !important; max-height: 19px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"><img class="pls-spacerleft gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"></td></tr><tr class="gc-reset"><td class="pls-bottomLeft gc-reset"><img class="gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/border_3.gif"></td><td class="gc-reset"><table cellpadding="0" cellspacing="0" style="width:100%" class="gc-reset"><tbody><tr class="gc-reset"><td class="pls-vert gc-reset"><img class="pls-dropBL gc-reset" style="width:4px !important; height:5px !important; max-width: 4px !important; max-height: 5px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"></td><td class="pls-dropBottom gc-reset"><img class="pls-tailtop gc-reset" style="width:19px !important; height:13px !important; max-width: 19px !important; max-height: 13px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"><img class="pls-spacertop gc-reset" style="width:1px !important; height:1px !important; max-width: 1px !important; max-height: 1px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"></td></tr></tbody></table></td><td class="pls-vert gc-reset"><img class="pls-dropBR gc-reset" style="width:5px !important; height:5px !important; max-width: 5px !important; max-height: 5px !important;" src="./Design &amp; Build a Milliohm Meter – Scullcom_files/spacer.gif"></td></tr></tbody></table></div></body></html>
