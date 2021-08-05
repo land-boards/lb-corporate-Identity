@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&pdf=LRS-200-SPEC.PDF -->
+<html dir="ltr" mozdisallowselectionprint="" moznomarginboxes=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!--#if GENERIC || CHROME-->
+    <meta name="google" content="notranslate">
+<!--#endif-->
+<!--#if GENERIC-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--#endif-->
+    <title>PDF.js viewer</title>
+
+<!--#if FIREFOX || MOZCENTRAL-->
+<!--#include viewer-snippet-firefox-extension.html-->
+<!--#endif-->
+<!--#if CHROME-->
+<!--#include viewer-snippet-chrome-extension.html-->
+<!--#endif-->
+
+    <link rel="stylesheet" href="./viewer.css">
+<!--#if !PRODUCTION-->
+    <link rel="resource" type="application/l10n" href="https://www.meanwell.com/scripts/resource/pdfJS/web/locale/locale.properties">
+<!--#endif-->
+
+<!--#if !(FIREFOX || MOZCENTRAL || CHROME || MINIFIED)-->
+    <script src="./compatibility.js.download"></script>
+<!--#endif-->
+
+<!--#if !PRODUCTION-->
+    <script src="./l10n.js.download"></script>
+<!--#endif-->
+
+<!--#if !PRODUCTION-->
+    <script src="./require.js.download"></script>
+<!--#endif-->
+
+<!--#if (GENERIC && !MINIFIED) -->
+<!--#include viewer-snippet.html-->
+<!--#endif-->
+
+<!--#if !PRODUCTION-->
+    <script src="./default_preferences.js.download"></script>
+<!--#endif-->
+      <script src="./jquery.min.js.download"></script>
+      <script src="./jquery.base64.min.js.download"></script>
+
+
+<!--#if !MINIFIED -->
+
+    <script src="./viewer.js.download"></script>
+<!--#else-->
+<!--#include viewer-snippet-minified.html-->
+<!--#endif-->
+
+  </head>
+
+  <body tabindex="1" class="">
+    <div id="outerContainer">
+
+      <div id="sidebarContainer">
+        <div id="toolbarSidebar">
+          <div class="splitToolbarButton toggled">
+            <button id="viewThumbnail" class="toolbarButton group toggled" title="Show Thumbnails" tabindex="2" data-l10n-id="thumbs">
+               <span data-l10n-id="thumbs_label">Thumbnails</span>
+            </button>
+            <button id="viewOutline" class="toolbarButton group" title="Show Document Outline" tabindex="3" data-l10n-id="outline">
+               <span data-l10n-id="outline_label">Document Outline</span>
+            </button>
+            <button id="viewAttachments" class="toolbarButton group" title="Show Attachments" tabindex="4" data-l10n-id="attachments" disabled="">
+               <span data-l10n-id="attachments_label">Attachments</span>
+            </button>
+          </div>
+        </div>
+        <div id="sidebarContent">
+          <div id="thumbnailView">
+          <a href="https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&amp;pdf=LRS-200-SPEC.PDF#page=1" title="Page 1"><div id="thumbnailContainer1" class="thumbnail selected"><div class="thumbnailSelectionRing" style="width: 100px; height: 140px;"></div></div></a><a href="https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&amp;pdf=LRS-200-SPEC.PDF#page=2" title="Page 2"><div id="thumbnailContainer2" class="thumbnail"><div class="thumbnailSelectionRing" style="width: 100px; height: 140px;"></div></div></a><a href="https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&amp;pdf=LRS-200-SPEC.PDF#page=3" title="Page 3"><div id="thumbnailContainer3" class="thumbnail"><div class="thumbnailSelectionRing" style="width: 100px; height: 140px;"></div></div></a><a href="https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&amp;pdf=LRS-200-SPEC.PDF#page=4" title="Page 4"><div id="thumbnailContainer4" class="thumbnail"><div class="thumbnailSelectionRing" style="width: 100px; height: 140px;"></div></div></a></div>
+          <div id="outlineView" class="hidden">
+          <div class="outlineItem"><a href="https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&amp;pdf=LRS-200-SPEC.PDF#%FE%FF%00_%00P%00A%00G%00E%001">页 1</a></div><div class="outlineItem"><a href="https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&amp;pdf=LRS-200-SPEC.PDF#%FE%FF%00_%00P%00A%00G%00E%002">页 2</a></div><div class="outlineItem"><a href="https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&amp;pdf=LRS-200-SPEC.PDF#%FE%FF%00_%00P%00A%00G%00E%003">页 3</a></div><div class="outlineItem"><a href="https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&amp;pdf=LRS-200-SPEC.PDF#%FE%FF%00_%00P%00A%00G%00E%004">页 4</a></div></div>
+          <div id="attachmentsView" class="hidden">
+          </div>
+        </div>
+      </div>  <!-- sidebarContainer -->
+
+      <div id="mainContainer">
+        <div class="findbar hidden doorHanger hiddenSmallView" id="findbar">
+          <label for="findInput" class="toolbarLabel" data-l10n-id="find_label">Find:</label>
+          <input id="findInput" class="toolbarField" tabindex="91">
+          <div class="splitToolbarButton">
+            <button class="toolbarButton findPrevious" title="" id="findPrevious" tabindex="92" data-l10n-id="find_previous">
+              <span data-l10n-id="find_previous_label">Previous</span>
+            </button>
+            <div class="splitToolbarButtonSeparator"></div>
+            <button class="toolbarButton findNext" title="" id="findNext" tabindex="93" data-l10n-id="find_next">
+              <span data-l10n-id="find_next_label">Next</span>
+            </button>
+          </div>
+          <input type="checkbox" id="findHighlightAll" class="toolbarField" tabindex="94">
+          <label for="findHighlightAll" class="toolbarLabel" data-l10n-id="find_highlight">Highlight all</label>
+          <input type="checkbox" id="findMatchCase" class="toolbarField" tabindex="95">
+          <label for="findMatchCase" class="toolbarLabel" data-l10n-id="find_match_case_label">Match case</label>
+          <span id="findResultsCount" class="toolbarLabel hidden"></span>
+          <span id="findMsg" class="toolbarLabel"></span>
+        </div>  <!-- findbar -->
+
+        <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
+          <div id="secondaryToolbarButtonContainer" style="max-height: 704px;">
+            <button id="secondaryPresentationMode" class="secondaryToolbarButton presentationMode visibleLargeView" title="Switch to Presentation Mode" tabindex="51" data-l10n-id="presentation_mode">
+              <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+            </button>
+
+            <button id="secondaryOpenFile" class="secondaryToolbarButton openFile visibleLargeView" title="Open File" tabindex="52" data-l10n-id="open_file">
+              <span data-l10n-id="open_file_label">Open</span>
+            </button>
+
+            <button id="secondaryPrint" class="secondaryToolbarButton print visibleMediumView hidden" title="Print" tabindex="53" data-l10n-id="print">
+              <span data-l10n-id="print_label">Print</span>
+            </button>
+
+            <button id="secondaryDownload" class="secondaryToolbarButton download visibleMediumView" title="Download" tabindex="54" data-l10n-id="download">
+              <span data-l10n-id="download_label">Download</span>
+            </button>
+
+            <a href="https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&amp;pdf=LRS-200-SPEC.PDF#page=4&amp;zoom=page-width,-9,776" id="secondaryViewBookmark" class="secondaryToolbarButton bookmark visibleSmallView" title="Current view (copy or open in new window)" tabindex="55" data-l10n-id="bookmark">
+              <span data-l10n-id="bookmark_label">Current View</span>
+            </a>
+
+            <div class="horizontalToolbarSeparator visibleLargeView"></div>
+
+            <button id="firstPage" class="secondaryToolbarButton firstPage" title="Go to First Page" tabindex="56" data-l10n-id="first_page">
+              <span data-l10n-id="first_page_label">Go to First Page</span>
+            </button>
+            <button id="lastPage" class="secondaryToolbarButton lastPage" title="Go to Last Page" tabindex="57" data-l10n-id="last_page" disabled="">
+              <span data-l10n-id="last_page_label">Go to Last Page</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="pageRotateCw" class="secondaryToolbarButton rotateCw" title="Rotate Clockwise" tabindex="58" data-l10n-id="page_rotate_cw">
+              <span data-l10n-id="page_rotate_cw_label">Rotate Clockwise</span>
+            </button>
+            <button id="pageRotateCcw" class="secondaryToolbarButton rotateCcw" title="Rotate Counterclockwise" tabindex="59" data-l10n-id="page_rotate_ccw">
+              <span data-l10n-id="page_rotate_ccw_label">Rotate Counterclockwise</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="toggleHandTool" class="secondaryToolbarButton handTool" title="Enable hand tool" tabindex="60" data-l10n-id="hand_tool_enable">
+              <span data-l10n-id="hand_tool_enable_label">Enable hand tool</span>
+            </button>
+
+            <div class="horizontalToolbarSeparator"></div>
+
+            <button id="documentProperties" class="secondaryToolbarButton documentProperties" title="Document Properties…" tabindex="61" data-l10n-id="document_properties">
+              <span data-l10n-id="document_properties_label">Document Properties…</span>
+            </button>
+          </div>
+        </div>  <!-- secondaryToolbar -->
+
+        <div class="toolbar">
+          <div id="toolbarContainer">
+            <div id="toolbarViewer">
+              <div id="toolbarViewerLeft">
+                <button id="sidebarToggle" class="toolbarButton" title="Toggle Sidebar" tabindex="11" data-l10n-id="toggle_sidebar">
+                  <span data-l10n-id="toggle_sidebar_label">Toggle Sidebar</span>
+                </button>
+                <div class="toolbarButtonSpacer"></div>
+                <button id="viewFind" class="toolbarButton group hiddenSmallView" title="Find in Document" tabindex="12" data-l10n-id="findbar">
+                   <span data-l10n-id="findbar_label">Find</span>
+                </button>
+                <div class="splitToolbarButton">
+                  <button class="toolbarButton pageUp" title="Previous Page" id="previous" tabindex="13" data-l10n-id="previous">
+                    <span data-l10n-id="previous_label">Previous</span>
+                  </button>
+                  <div class="splitToolbarButtonSeparator"></div>
+                  <button class="toolbarButton pageDown" title="Next Page" id="next" tabindex="14" data-l10n-id="next" disabled="">
+                    <span data-l10n-id="next_label">Next</span>
+                  </button>
+                </div>
+                <label id="pageNumberLabel" class="toolbarLabel" for="pageNumber" data-l10n-id="page_label">Page: </label>
+                <input type="number" id="pageNumber" class="toolbarField pageNumber" value="1" size="4" min="1" tabindex="15" max="4">
+                <span id="numPages" class="toolbarLabel">of 4</span>
+              </div>
+              <div id="toolbarViewerRight">
+                <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Presentation Mode" tabindex="31" data-l10n-id="presentation_mode">
+                  <span data-l10n-id="presentation_mode_label">Presentation Mode</span>
+                </button>
+
+                <button id="openFile" class="toolbarButton openFile hiddenLargeView" title="Open File" tabindex="32" data-l10n-id="open_file">
+                  <span data-l10n-id="open_file_label">Open</span>
+                </button>
+
+                  
+                  <button id="print" class="toolbarButton print hiddenMediumView hidden" title="列印" tabindex="33" data-l10n-id="print">
+                      <span data-l10n-id="print_label">Print</span>
+                  </button>
+
+                <button id="download" class="toolbarButton download hiddenMediumView" title="Download" tabindex="34" data-l10n-id="download">
+                  <span data-l10n-id="download_label">Download</span>
+                </button>
+                <a href="https://www.meanwell.com/scripts/resource/pdfJS/web/viewer.html?f=LRS-200&amp;pdf=LRS-200-SPEC.PDF#page=4&amp;zoom=page-width,-9,776" id="viewBookmark" class="toolbarButton bookmark hiddenSmallView" title="Current view (copy or open in new window)" tabindex="35" data-l10n-id="bookmark">
+                  <span data-l10n-id="bookmark_label">Current View</span>
+                </a>
+
+                <div class="verticalToolbarSeparator hiddenSmallView"></div>
+
+                <button id="secondaryToolbarToggle" class="toolbarButton" title="Tools" tabindex="36" data-l10n-id="tools">
+                  <span data-l10n-id="tools_label">Tools</span>
+                </button>
+              </div>
+              <div class="outerCenter">
+                <div class="innerCenter" id="toolbarViewerMiddle">
+                  <div class="splitToolbarButton">
+                    <button id="zoomOut" class="toolbarButton zoomOut" title="Zoom Out" tabindex="21" data-l10n-id="zoom_out">
+                      <span data-l10n-id="zoom_out_label">Zoom Out</span>
+                    </button>
+                    <div class="splitToolbarButtonSeparator"></div>
+                    <button id="zoomIn" class="toolbarButton zoomIn" title="Zoom In" tabindex="22" data-l10n-id="zoom_in">
+                      <span data-l10n-id="zoom_in_label">Zoom In</span>
+                     </button>
+                  </div>
+                  <span id="scaleSelectContainer" class="dropdownToolbarButton" style="min-width: 122px; max-width: 122px;">
+                     <select id="scaleSelect" title="Zoom" tabindex="23" data-l10n-id="zoom" style="min-width: 144px;">
+                      <option id="pageAutoOption" title="" value="auto" selected="selected" data-l10n-id="page_scale_auto">Automatic Zoom</option>
+                      <option id="pageActualOption" title="" value="page-actual" data-l10n-id="page_scale_actual">Actual Size</option>
+                      <option id="pageFitOption" title="" value="page-fit" data-l10n-id="page_scale_fit">Fit Page</option>
+                      <option id="pageWidthOption" title="" value="page-width" data-l10n-id="page_scale_width">Full Width</option>
+                      <option id="customScaleOption" title="" value="custom" hidden="true"></option>
+                      <option title="" value="0.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 50 }">50%</option>
+                      <option title="" value="0.75" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 75 }">75%</option>
+                      <option title="" value="1" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 100 }">100%</option>
+                      <option title="" value="1.25" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 125 }">125%</option>
+                      <option title="" value="1.5" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 150 }">150%</option>
+                      <option title="" value="2" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 200 }">200%</option>
+                      <option title="" value="3" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 300 }">300%</option>
+                      <option title="" value="4" data-l10n-id="page_scale_percent" data-l10n-args="{ &quot;scale&quot;: 400 }">400%</option>
+                    </select>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div id="loadingBar" style="width: calc(100% - 17px);" class="hidden">
+              <div class="progress" style="height: 100%; width: 100%;">
+                <div class="glimmer">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <menu type="context" id="viewerContextMenu">
+          <menuitem id="contextFirstPage" label="First Page" data-l10n-id="first_page"></menuitem>
+          <menuitem id="contextLastPage" label="Last Page" data-l10n-id="last_page"></menuitem>
+          <menuitem id="contextPageRotateCw" label="Rotate Clockwise" data-l10n-id="page_rotate_cw"></menuitem>
+          <menuitem id="contextPageRotateCcw" label="Rotate Counter-Clockwise" data-l10n-id="page_rotate_ccw"></menuitem>
+        </menu>
+
+        <div id="viewerContainer" tabindex="0">
+          <div id="viewer" class="pdfViewer"><div id="pageContainer1" class="page" data-page-number="1" style="width: 1315px; height: 1859px;"><div class="loadingIcon"></div></div><div id="pageContainer2" class="page" data-page-number="2" style="width: 1315px; height: 1859px;"><div class="loadingIcon"></div></div><div id="pageContainer3" class="page" data-page-number="3" style="width: 1315px; height: 1859px;"><div class="loadingIcon"></div></div><div id="pageContainer4" class="page" data-page-number="4" style="width: 1315px; height: 1859px;" data-loaded="true"><div class="canvasWrapper" style="width: 1315px; height: 1859px;"><canvas id="page4" width="1315" height="1860" style="width: 1315px; height: 1860px;"></canvas></div><div class="textLayer" style="width: 1315px; height: 1859px;"><div style="left: 131.174px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">M</div><div style="left: 146.769px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">e</div><div style="left: 157.346px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">c</div><div style="left: 167.923px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">h</div><div style="left: 179.494px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">a</div><div style="left: 190.071px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">n</div><div style="left: 201.642px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">i</div><div style="left: 207.181px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">c</div><div style="left: 217.757px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">a</div><div data-canvas-width="22.156879939308787" style="left: 228.334px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif; transform: scaleX(0.859499);">l S</div><div style="left: 250.989px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">p</div><div style="left: 262.56px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">e</div><div style="left: 273.136px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">c</div><div style="left: 283.713px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">i</div><div style="left: 289.252px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">f</div><div style="left: 295.786px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">i</div><div style="left: 301.325px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">c</div><div style="left: 311.902px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">a</div><div style="left: 322.479px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">t</div><div style="left: 329.014px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">i</div><div style="left: 334.553px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">o</div><div style="left: 346.123px; top: 255.58px; font-size: 22.0906px; font-family: sans-serif;">n</div><div style="left: 870.383px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">T</div><div style="left: 878.437px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">e</div><div style="left: 887.302px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">r</div><div style="left: 892.932px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">m</div><div style="left: 905.81px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">i</div><div style="left: 909.834px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">n</div><div style="left: 918.698px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">a</div><div data-canvas-width="16.912569572816356" style="left: 927.562px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif; transform: scaleX(0.820173);">l P</div><div style="left: 945.281px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">i</div><div data-canvas-width="22.550092763755142" style="left: 949.305px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif; transform: scaleX(0.820087);">n N</div><div style="left: 972.658px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">o</div><div data-canvas-width="8.058653840338827" style="left: 981.522px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif; transform: scaleX(0.820756);">. </div><div style="left: 988.785px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">A</div><div style="left: 999.255px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">s</div><div style="left: 1007.31px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">s</div><div style="left: 1015.36px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">i</div><div style="left: 1019.39px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">g</div><div style="left: 1028.25px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">n</div><div style="left: 1037.12px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">m</div><div style="left: 1050px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">e</div><div style="left: 1058.86px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif;">n</div><div data-canvas-width="12.087980760508243" style="left: 1067.72px; top: 840.649px; font-size: 17.6725px; font-family: sans-serif; transform: scaleX(0.820756);">t :</div><div style="left: 880.662px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">P</div><div style="left: 889.823px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">i</div><div data-canvas-width="19.73133116828575" style="left: 893.344px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif; transform: scaleX(0.820154);">n N</div><div style="left: 913.776px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">o</div><div style="left: 921.532px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">.</div><div style="left: 1037.21px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">P</div><div style="left: 1046.37px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">i</div><div data-canvas-width="19.73133116828575" style="left: 1049.89px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif; transform: scaleX(0.820154);">n N</div><div style="left: 1070.33px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">o</div><div style="left: 1078.08px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">.</div><div style="left: 899.336px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">1</div><div style="left: 1047.95px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">4</div><div style="left: 1055.71px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">~</div><div style="left: 1063.82px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">6</div><div style="left: 899.336px; top: 931.119px; font-size: 15.4634px; font-family: sans-serif;">3</div><div style="left: 899.336px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">2</div><div style="left: 1047.95px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">7</div><div style="left: 1055.71px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">~</div><div style="left: 1063.82px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">9</div><div style="left: 944.837px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">A</div><div style="left: 953.997px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">s</div><div style="left: 961.045px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">s</div><div style="left: 968.092px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">i</div><div style="left: 971.614px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">g</div><div style="left: 979.37px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">n</div><div style="left: 987.126px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">m</div><div style="left: 998.395px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">e</div><div style="left: 1006.15px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">n</div><div style="left: 1013.91px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">t</div><div style="left: 1107.65px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">A</div><div style="left: 1116.81px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">s</div><div style="left: 1123.85px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">s</div><div style="left: 1130.9px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">i</div><div style="left: 1134.42px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">g</div><div style="left: 1142.18px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">n</div><div style="left: 1149.94px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">m</div><div style="left: 1161.21px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">e</div><div style="left: 1168.96px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">n</div><div style="left: 1176.72px; top: 865.369px; font-size: 15.4634px; font-family: sans-serif;">t</div><div style="left: 965.985px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">A</div><div style="left: 975.146px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">C</div><div style="left: 985.003px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">/</div><div style="left: 989.233px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">L</div><div style="left: 1094.94px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">D</div><div data-canvas-width="22.54567464213215" style="left: 1104.8px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif; transform: scaleX(0.820283);">C O</div><div style="left: 1128.05px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">U</div><div style="left: 1137.91px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">T</div><div style="left: 1146.36px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">P</div><div style="left: 1155.52px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">U</div><div style="left: 1165.38px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">T</div><div data-canvas-width="7.747176265917838" style="left: 1172.9px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif; transform: scaleX(0.820365);"> -</div><div style="left: 1181.36px; top: 887.286px; font-size: 15.4634px; font-family: sans-serif;">V</div><div style="left: 964.147px; top: 931.119px; font-size: 15.4634px; font-family: sans-serif;">F</div><div style="left: 972.6px; top: 931.119px; font-size: 15.4634px; font-family: sans-serif;">G</div><div style="left: 964.935px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">A</div><div style="left: 974.096px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">C</div><div style="left: 983.953px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">/</div><div style="left: 988.184px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">N</div><div style="left: 1094.92px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">D</div><div data-canvas-width="22.54567464213215" style="left: 1104.77px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif; transform: scaleX(0.820283);">C O</div><div style="left: 1128.02px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">U</div><div style="left: 1137.88px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">T</div><div style="left: 1146.33px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">P</div><div style="left: 1155.49px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">U</div><div style="left: 1165.35px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">T</div><div data-canvas-width="10.93264195609563" style="left: 1172.88px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif; transform: scaleX(0.820543);"> +</div><div style="left: 1184.51px; top: 909.203px; font-size: 15.4634px; font-family: sans-serif;">V</div><div style="left: 962.574px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">C</div><div style="left: 973.838px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">a</div><div style="left: 982.703px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">s</div><div data-canvas-width="22.550092763755142" style="left: 990.757px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif; transform: scaleX(0.820087);">e N</div><div style="left: 1014.11px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">o</div><div data-canvas-width="16.117307680677655" style="left: 1022.97px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif; transform: scaleX(0.820395);">. 2</div><div style="left: 1039.89px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">0</div><div data-canvas-width="62.8433619654493" style="left: 1048.76px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif; transform: scaleX(0.820516);">7           U</div><div style="left: 1112.4px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">n</div><div style="left: 1121.26px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">i</div><div style="left: 1125.29px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">t</div><div style="left: 1130.12px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">:</div><div style="left: 1134.96px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">m</div><div style="left: 1147.84px; top: 269.317px; font-size: 17.6725px; font-family: sans-serif;">m</div><div data-angle="-90" style="left: 774.648px; top: 584.944px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">1</div><div data-angle="-90" style="left: 774.648px; top: 578.603px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">1</div><div data-angle="-90" style="left: 774.648px; top: 571.4px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">5</div><div data-angle="-90" style="left: 747.362px; top: 581.535px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">5</div><div data-angle="-90" style="left: 747.362px; top: 574.332px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">0</div><div data-angle="-90" style="left: 121.421px; top: 593.242px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">1</div><div data-angle="-90" style="left: 121.421px; top: 586.04px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">3</div><div data-angle="-90" style="left: 121.421px; top: 578.837px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">5</div><div data-angle="-90" style="left: 154.137px; top: 568.044px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">9</div><div data-angle="-90" style="left: 154.137px; top: 560.842px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">.</div><div data-angle="-90" style="left: 154.137px; top: 556.914px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">5</div><div data-angle="-90" style="left: 156.622px; top: 646.954px; font-size: 14.3586px; font-family: sans-serif; transform: rotate(-90deg);">8</div><div data-angle="-90" style="left: 747.082px; top: 690.117px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">3</div><div data-angle="-90" style="left: 747.082px; top: 682.915px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">2</div><div data-angle="-90" style="left: 747.082px; top: 675.712px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">.</div><div data-angle="-90" style="left: 747.082px; top: 671.784px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">5</div><div data-angle="-90" style="left: 747.705px; top: 924.124px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">1</div><div data-angle="-90" style="left: 747.705px; top: 916.921px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">2</div><div data-angle="-90" style="left: 747.705px; top: 909.718px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">.</div><div data-angle="-90" style="left: 747.705px; top: 905.789px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">5</div><div data-angle="-90" style="left: 775.042px; top: 896.989px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">3</div><div data-angle="-90" style="left: 775.042px; top: 889.786px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">0</div><div style="left: 216.755px; top: 455.086px; font-size: 14.3589px; font-family: sans-serif;">+</div><div style="left: 224.287px; top: 455.086px; font-size: 14.3589px; font-family: sans-serif;">V</div><div style="left: 212.587px; top: 467.703px; font-size: 14.3589px; font-family: sans-serif;">A</div><div style="left: 221.094px; top: 467.703px; font-size: 14.3589px; font-family: sans-serif;">D</div><div style="left: 230.247px; top: 467.703px; font-size: 14.3589px; font-family: sans-serif;">J</div><div style="left: 236.792px; top: 467.703px; font-size: 14.3589px; font-family: sans-serif;">.</div><div style="left: 212.872px; top: 438.587px; font-size: 14.3589px; font-family: sans-serif;">L</div><div style="left: 220.075px; top: 438.587px; font-size: 14.3589px; font-family: sans-serif;">E</div><div style="left: 228.581px; top: 438.587px; font-size: 14.3589px; font-family: sans-serif;">D</div><div style="left: 238.8px; top: 687.742px; font-size: 14.3589px; font-family: sans-serif;">1</div><div style="left: 238.8px; top: 663.755px; font-size: 14.3589px; font-family: sans-serif;">2</div><div style="left: 238.8px; top: 639.491px; font-size: 14.3589px; font-family: sans-serif;">3</div><div style="left: 238.8px; top: 615.089px; font-size: 14.3589px; font-family: sans-serif;">4</div><div style="left: 238.8px; top: 590.825px; font-size: 14.3589px; font-family: sans-serif;">5</div><div style="left: 238.8px; top: 566.561px; font-size: 14.3589px; font-family: sans-serif;">6</div><div style="left: 238.8px; top: 542.574px; font-size: 14.3589px; font-family: sans-serif;">7</div><div style="left: 238.8px; top: 517.896px; font-size: 14.3589px; font-family: sans-serif;">8</div><div style="left: 238.8px; top: 493.909px; font-size: 14.3589px; font-family: sans-serif;">9</div><div style="left: 684.699px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">4</div><div style="left: 691.901px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">-</div><div style="left: 696.475px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">M</div><div style="left: 706.94px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">4</div><div style="left: 714.143px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">(</div><div style="left: 718.718px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">B</div><div style="left: 727.225px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">o</div><div style="left: 734.427px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">t</div><div data-canvas-width="17.67580008318836" style="left: 738.355px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif; transform: scaleX(0.820642);">h S</div><div style="left: 756.684px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">i</div><div style="left: 759.954px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">d</div><div style="left: 767.157px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">e</div><div style="left: 774.359px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">s</div><div data-canvas-width="13.741462777913288" style="left: 780.903px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif; transform: scaleX(0.820567);">) L</div><div style="left: 795.3px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">=</div><div style="left: 802.833px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">5</div><div style="left: 810.036px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">m</div><div style="left: 820.501px; top: 937.034px; font-size: 14.3589px; font-family: sans-serif;">m</div><div style="left: 452.599px; top: 812.803px; font-size: 14.3589px; font-family: sans-serif;">1</div><div style="left: 459.802px; top: 812.803px; font-size: 14.3589px; font-family: sans-serif;">5</div><div style="left: 467.004px; top: 812.803px; font-size: 14.3589px; font-family: sans-serif;">0</div><div style="left: 217.863px; top: 343.473px; font-size: 14.3589px; font-family: sans-serif;">3</div><div style="left: 225.066px; top: 343.473px; font-size: 14.3589px; font-family: sans-serif;">2</div><div style="left: 232.269px; top: 343.473px; font-size: 14.3589px; font-family: sans-serif;">.</div><div style="left: 236.198px; top: 343.473px; font-size: 14.3589px; font-family: sans-serif;">5</div><div style="left: 452.599px; top: 343.473px; font-size: 14.3589px; font-family: sans-serif;">1</div><div style="left: 459.802px; top: 343.473px; font-size: 14.3589px; font-family: sans-serif;">5</div><div style="left: 467.004px; top: 343.473px; font-size: 14.3589px; font-family: sans-serif;">0</div><div style="left: 453.014px; top: 317.961px; font-size: 14.3589px; font-family: sans-serif;">2</div><div style="left: 460.217px; top: 317.961px; font-size: 14.3589px; font-family: sans-serif;">1</div><div style="left: 467.42px; top: 317.961px; font-size: 14.3589px; font-family: sans-serif;">5</div><div style="left: 263.896px; top: 768.297px; font-size: 14.3589px; font-family: sans-serif;">1</div><div style="left: 271.098px; top: 768.297px; font-size: 14.3589px; font-family: sans-serif;">5</div><div style="left: 292.596px; top: 525.799px; font-size: 14.3589px; font-family: sans-serif;">4</div><div style="left: 299.799px; top: 525.799px; font-size: 14.3589px; font-family: sans-serif;">-</div><div style="left: 304.373px; top: 525.799px; font-size: 14.3589px; font-family: sans-serif;">M</div><div data-canvas-width="16.369140613188243" style="left: 314.837px; top: 525.799px; font-size: 14.3589px; font-family: sans-serif; transform: scaleX(0.820573);">4 L</div><div style="left: 331.862px; top: 525.799px; font-size: 14.3589px; font-family: sans-serif;">=</div><div style="left: 339.395px; top: 525.799px; font-size: 14.3589px; font-family: sans-serif;">3</div><div style="left: 346.597px; top: 525.799px; font-size: 14.3589px; font-family: sans-serif;">m</div><div style="left: 357.061px; top: 525.799px; font-size: 14.3589px; font-family: sans-serif;">m</div><div data-angle="-90" style="left: 680.185px; top: 748.694px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">1</div><div data-angle="-90" style="left: 680.185px; top: 741.492px; font-size: 14.3589px; font-family: sans-serif; transform: rotate(-90deg);">6</div><div data-angle="-90" data-canvas-width="16.369634205735967" style="left: 302.607px; top: 892.937px; font-size: 14.3593px; font-family: sans-serif; transform: rotate(-90deg) scaleX(0.820598);">6.9</div><div data-angle="-90" data-canvas-width="22.91748788803035" style="left: 301.828px; top: 922.519px; font-size: 14.3593px; font-family: sans-serif; transform: rotate(-90deg) scaleX(0.820557);">12.8</div><div style="left: 272.787px; top: 932.138px; font-size: 14.3593px; font-family: sans-serif;">6</div><div style="left: 278.292px; top: 932.138px; font-size: 14.3593px; font-family: sans-serif;">.</div><div style="left: 281.295px; top: 932.138px; font-size: 14.3593px; font-family: sans-serif;">5</div><div style="left: 255.88px; top: 932.138px; font-size: 14.3593px; font-family: sans-serif;">6</div><div style="left: 261.385px; top: 932.138px; font-size: 14.3593px; font-family: sans-serif;">.</div><div style="left: 264.388px; top: 932.138px; font-size: 14.3593px; font-family: sans-serif;">5</div><div style="left: 217.863px; top: 812.803px; font-size: 14.3589px; font-family: sans-serif;">3</div><div style="left: 225.066px; top: 812.803px; font-size: 14.3589px; font-family: sans-serif;">2</div><div style="left: 232.269px; top: 812.803px; font-size: 14.3589px; font-family: sans-serif;">.</div><div style="left: 236.198px; top: 812.803px; font-size: 14.3589px; font-family: sans-serif;">5</div><div style="left: 300.209px; top: 854.066px; font-size: 14.3589px; font-family: sans-serif;">2</div><div style="left: 131.174px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">I</div><div style="left: 137.218px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">n</div><div style="left: 149.292px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">s</div><div style="left: 160.373px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">t</div><div style="left: 167.411px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">a</div><div style="left: 178.492px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">l</div><div style="left: 184.536px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">l</div><div style="left: 190.58px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">a</div><div style="left: 201.661px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">t</div><div style="left: 208.699px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">i</div><div style="left: 214.743px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">o</div><div data-canvas-width="31.19193865832902" style="left: 226.817px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif; transform: scaleX(0.847058);">n M</div><div style="left: 259.02px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">a</div><div style="left: 270.101px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">n</div><div style="left: 282.176px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">u</div><div style="left: 294.25px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">a</div><div style="left: 305.331px; top: 1044.58px; font-size: 22.0906px; font-family: sans-serif;">l</div><div style="left: 256.179px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">2</div><div style="left: 270.08px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">0</div><div style="left: 283.981px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">0</div><div data-canvas-width="41.06202236409489" style="left: 297.882px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif; transform: scaleX(0.820423);">W S</div><div style="left: 340.752px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">i</div><div style="left: 347.395px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">n</div><div style="left: 361.296px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">g</div><div style="left: 375.197px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">l</div><div data-canvas-width="35.04454071357872" style="left: 381.84px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif; transform: scaleX(0.820463);">e O</div><div style="left: 418.703px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">u</div><div style="left: 432.604px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">t</div><div style="left: 440.462px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">p</div><div style="left: 454.363px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">u</div><div data-canvas-width="26.588255927170543" style="left: 468.264px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif; transform: scaleX(0.820615);">t S</div><div style="left: 496.66px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">w</div><div style="left: 514.162px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">i</div><div style="left: 520.805px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">t</div><div style="left: 528.662px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">c</div><div style="left: 541.349px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">h</div><div style="left: 555.25px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">i</div><div style="left: 561.892px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">n</div><div data-canvas-width="32.632246307424666" style="left: 575.794px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif; transform: scaleX(0.820403);">g P</div><div style="left: 610.234px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">o</div><div style="left: 624.135px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">w</div><div style="left: 641.637px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">e</div><div data-canvas-width="27.781148765378592" style="left: 655.538px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif; transform: scaleX(0.820409);">r S</div><div style="left: 685.128px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">u</div><div style="left: 699.029px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">p</div><div style="left: 712.93px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">p</div><div style="left: 726.831px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">l</div><div style="left: 733.474px; top: 172.488px; font-size: 26.5087px; font-family: sans-serif;">y</div><div style="left: 894.294px; top: 141.383px; font-size: 53.0175px; font-family: sans-serif;">L</div><div style="left: 926.9px; top: 141.383px; font-size: 53.0175px; font-family: sans-serif;">R</div><div style="left: 964.321px; top: 141.383px; font-size: 53.0175px; font-family: sans-serif;">S</div><div style="left: 999.357px; top: 141.383px; font-size: 53.0175px; font-family: sans-serif;">-</div><div style="left: 1019.87px; top: 141.383px; font-size: 53.0175px; font-family: sans-serif;">2</div><div style="left: 1050.09px; top: 141.383px; font-size: 53.0175px; font-family: sans-serif;">0</div><div data-canvas-width="48.35192304203297" style="left: 1080.31px; top: 141.383px; font-size: 53.0175px; font-family: sans-serif; transform: scaleX(0.820395);">0  </div><div style="left: 1128.66px; top: 163.473px; font-size: 30.9269px; font-family: sans-serif;">s</div><div style="left: 1146.29px; top: 163.473px; font-size: 30.9269px; font-family: sans-serif;">e</div><div style="left: 1163.92px; top: 163.473px; font-size: 30.9269px; font-family: sans-serif;">r</div><div style="left: 1177.31px; top: 163.473px; font-size: 30.9269px; font-family: sans-serif;">i</div><div style="left: 1187.88px; top: 163.473px; font-size: 30.9269px; font-family: sans-serif;">e</div><div style="left: 1205.51px; top: 163.473px; font-size: 30.9269px; font-family: sans-serif;">s</div><div style="left: 1010.86px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">F</div><div style="left: 1018.1px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">i</div><div style="left: 1021.12px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">l</div><div data-canvas-width="16.912569572816356" style="left: 1024.14px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif; transform: scaleX(0.820241);">e N</div><div style="left: 1041.65px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">a</div><div style="left: 1048.3px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">m</div><div style="left: 1057.96px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">e</div><div style="left: 1064.61px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">:</div><div style="left: 1068.23px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">L</div><div style="left: 1074.88px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">R</div><div style="left: 1083.33px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">S</div><div style="left: 1091.18px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">-</div><div style="left: 1095.4px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">2</div><div style="left: 1102.05px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">0</div><div style="left: 1108.7px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">0</div><div style="left: 1115.35px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">-</div><div style="left: 1119.57px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">S</div><div style="left: 1127.42px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">P</div><div style="left: 1135.28px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">E</div><div data-canvas-width="22.956559953070478" style="left: 1143.13px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif; transform: scaleX(0.820417);">C   2</div><div style="left: 1166.69px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">0</div><div style="left: 1173.33px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">2</div><div style="left: 1179.98px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">1</div><div style="left: 1186.63px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">-</div><div style="left: 1190.85px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">0</div><div style="left: 1197.5px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">4</div><div style="left: 1204.15px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">-</div><div style="left: 1208.37px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">1</div><div style="left: 1215.02px; top: 1773.23px; font-size: 13.2544px; font-family: sans-serif;">2</div><div style="left: 129.308px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">P</div><div style="left: 139.776px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">l</div><div style="left: 143.802px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">e</div><div style="left: 152.666px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">a</div><div style="left: 161.531px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">s</div><div data-canvas-width="16.914168656269467" style="left: 169.587px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif; transform: scaleX(0.82025);">e r</div><div style="left: 187.307px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">e</div><div style="left: 196.172px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">f</div><div style="left: 201.009px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">e</div><div data-canvas-width="12.88446076323975" style="left: 209.872px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif; transform: scaleX(0.820519);">r t</div><div data-canvas-width="28.207955251208013" style="left: 223.561px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif; transform: scaleX(0.820421);">o : h</div><div style="left: 252.576px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">t</div><div style="left: 257.409px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">t</div><div style="left: 262.245px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">p</div><div style="left: 271.11px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">:</div><div style="left: 275.944px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">/</div><div style="left: 280.78px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">/</div><div style="left: 285.613px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">w</div><div style="left: 296.88px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">w</div><div data-canvas-width="14.492809088966519" style="left: 308.144px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif; transform: scaleX(0.868092);">w.</div><div style="left: 323.449px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">m</div><div style="left: 336.329px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">e</div><div style="left: 345.194px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">a</div><div style="left: 354.057px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">n</div><div style="left: 362.923px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">w</div><div style="left: 374.19px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">e</div><div style="left: 383.053px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">l</div><div style="left: 387.08px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">l</div><div style="left: 391.104px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">.</div><div style="left: 395.937px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">c</div><div style="left: 403.994px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">o</div><div style="left: 412.858px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">m</div><div style="left: 425.738px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">/</div><div style="left: 430.571px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">m</div><div style="left: 443.452px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">a</div><div style="left: 452.315px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">n</div><div style="left: 461.181px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">u</div><div style="left: 470.048px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">a</div><div style="left: 478.913px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">l</div><div style="left: 482.937px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">.</div><div style="left: 487.77px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">h</div><div style="left: 496.636px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">t</div><div style="left: 501.472px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">m</div><div style="left: 514.351px; top: 1087.97px; font-size: 17.6742px; font-family: sans-serif;">l</div><div class="endOfContent"></div></div></div></div>
+        </div>
+
+        <div id="errorWrapper" hidden="true">
+          <div id="errorMessageLeft">
+            <span id="errorMessage"></span>
+            <button id="errorShowMore" data-l10n-id="error_more_info">
+              More Information
+            </button>
+            <button id="errorShowLess" data-l10n-id="error_less_info" hidden="true">
+              Less Information
+            </button>
+          </div>
+          <div id="errorMessageRight">
+            <button id="errorClose" data-l10n-id="error_close">
+              Close
+            </button>
+          </div>
+          <div class="clearBoth"></div>
+          <textarea id="errorMoreInfo" hidden="true" readonly="readonly"></textarea>
+        </div>
+      </div> <!-- mainContainer -->
+
+      <div id="overlayContainer" class="hidden">
+        <div id="passwordOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <p id="passwordText" data-l10n-id="password_label">Enter the password to open this PDF file:</p>
+            </div>
+            <div class="row">
+              <!-- The type="password" attribute is set via script, to prevent warnings in Firefox for all http:// documents. -->
+              <input id="password" class="toolbarField">
+            </div>
+            <div class="buttonRow">
+              <button id="passwordCancel" class="overlayButton"><span data-l10n-id="password_cancel">Cancel</span></button>
+              <button id="passwordSubmit" class="overlayButton"><span data-l10n-id="password_ok">OK</span></button>
+            </div>
+          </div>
+        </div>
+        <div id="documentPropertiesOverlay" class="container hidden">
+          <div class="dialog">
+            <div class="row">
+              <span data-l10n-id="document_properties_file_name">File name:</span> <p id="fileNameField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_file_size">File size:</span> <p id="fileSizeField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_title">Title:</span> <p id="titleField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_author">Author:</span> <p id="authorField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_subject">Subject:</span> <p id="subjectField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_keywords">Keywords:</span> <p id="keywordsField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creation_date">Creation Date:</span> <p id="creationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_modification_date">Modification Date:</span> <p id="modificationDateField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_creator">Creator:</span> <p id="creatorField">-</p>
+            </div>
+            <div class="separator"></div>
+            <div class="row">
+              <span data-l10n-id="document_properties_producer">PDF Producer:</span> <p id="producerField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_version">PDF Version:</span> <p id="versionField">-</p>
+            </div>
+            <div class="row">
+              <span data-l10n-id="document_properties_page_count">Page Count:</span> <p id="pageCountField">-</p>
+            </div>
+            <div class="buttonRow">
+              <button id="documentPropertiesClose" class="overlayButton"><span data-l10n-id="document_properties_close">Close</span></button>
+            </div>
+          </div>
+        </div>
+<!--#if CHROME-->
+<!--#include viewer-snippet-chrome-overlays.html-->
+<!--#endif-->
+      </div>  <!-- overlayContainer -->
+
+    </div> <!-- outerContainer -->
+    <div id="printContainer"></div>
+<!--#if !(FIREFOX || MOZCENTRAL)-->
+<!--#include viewer-snippet-mozPrintCallback-polyfill.html-->
+<!--#endif-->
+  
+
+<input id="fileInput" class="fileInput" type="file"></body></html>
